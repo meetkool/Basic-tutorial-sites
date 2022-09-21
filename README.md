@@ -1,6 +1,10 @@
 
   # Basic-tutorial-sites
   Basic tutorial sites
+  
+  this unix tutorial site will not be updated from now
+  
+  will work for more tutorial sites 
 
 <img src="imag1.jpg" alt="alt text" title="image Title" />
 <br>
