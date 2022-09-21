@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cuserdefined.html"> Back To C User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that returns area of circle based on radius passed to function as argument
+#include<stdio.h>
+#include<conio.h>
+float area(int);
+float area(int radius)
+{
+	float ar;
+	ar=3.14*radius*radius;
+	return ar;
+}
+void main()
+{
+	int r;
+	float ar;
+        clrscr();
+	printf("enter the radius of the circle");
+	scanf("%d",&r);
+	ar=area(r);
+	printf("area of circle is %f",ar);
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

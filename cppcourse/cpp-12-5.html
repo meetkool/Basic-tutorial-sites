@@ -1,0 +1,66 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppclasses.html">Back To C++ Classes</a>
+        <br>
+
+             <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate example of class student with array marks having 3 integer elements as a datamember of the class
+#include<iostream.h>
+#include<conio.h>
+class student
+{
+	int rollno;
+	char name[20];
+	int clas;
+	float marks[3];
+public:
+	void getdata();
+	void showdata();
+};
+void student::getdata()
+{
+	int i;
+	cout<<"\nenter rollno of student ";
+	cin>>rollno;
+	cout<<"\nenter name of student ";
+	cin>>name;
+	cout<<"\nenter class of student ";
+	cin>>clas;
+	for(i=0;i<3;i++)
+	{
+		cout<<"\nenter marks of student in subject "<<i+1<<" : ";
+		cin>>marks[i];
+	}
+
+}
+void student::showdata()
+{
+	int i;
+	cout<<"\nrollno of student is "<<rollno;
+	cout<<"\nname of student is "<<name;
+	cout<<"\nclass of student is "<<clas;
+	for(i=0;i<3;i++)
+	{
+		cout<<"\nmarks of student in subject "<<i+1<<" : "<<marks[i];
+	}
+}
+void main()
+{
+	student ob;
+        clrscr();
+	ob.getdata();
+	ob.showdata();
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

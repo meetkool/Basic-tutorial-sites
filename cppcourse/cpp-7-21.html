@@ -1,0 +1,59 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp2darrays.html"> Back To C++ Double Dimensional Arrays Index</a>
+
+        <br><br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input a sentence and convert it to words
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+	char str[100]="this is a cpp program";
+	char words[10][10];
+	int index=0;
+	int l,i,j;
+	l=strlen(str);
+	i=0;
+	j=0;
+	int k=0;
+	while(i<l)
+	{
+		if(str[i]==' ')
+		{
+			words[j][k]='\0';
+			k=0;
+			j++;
+			index++;
+		}
+		else
+		{
+			words[j][k]=str[i];
+			k++;
+		}
+
+		if(i==(l-1))
+		{
+			words[j][k]='\0';
+
+
+		}
+		i++;
+	}
+	for(i=0;i<=index;i++)
+	{
+		cout<<words[i]<<"\n";
+	}
+	getch();
+}
+
+        </textarea>
+    </body>
+</html>

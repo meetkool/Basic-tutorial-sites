@@ -1,0 +1,32 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <a href="cppbasics.html"> Back To C++ Basic Index</a>
+        <br>
+           <hr>
+        <textarea rows="40" cols="100">
+//program to create macros using #define directive
+#include<iostream.h>
+#include<conio.h>
+#define PI 3.14
+#define squarearea(a) a*a       //macro  to calculate area of square
+#define circlearea(r) PI*r*r
+#define sum(a,b,c) a+b+c
+void main()
+{
+    clrscr();
+    int a=10;
+    cout<<squarearea(a);
+    cout<<"\n";
+    cout<<circlearea(a);
+    cout<<"\n";
+    cout<<sum(a,a,a);
+    getch();
+}
+</textarea>
+    </body>
+</html>

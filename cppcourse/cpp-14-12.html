@@ -1,0 +1,84 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppinheritance.html"> Back To C++ Inheritance  Index</a>
+        
+       
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate multilevel inheritance, class boxweight is derived from base class box and class shipment is derived from class boxweight (names of member functions are same in base class and derived class)
+#include<iostream.h>
+#include<conio.h>
+class box
+{
+    int width;
+    int depth;
+    int height;
+    public:
+    void getdata()
+    {
+        cout<<"\nenter width of box ";
+        cin>>width;
+        cout<<"\nenter depth of box ";
+        cin>>depth;
+        cout<<"\nenter height of box ";
+        cin>>height;
+    }
+    void showdata()
+    {
+        cout<<"\nwidth of box is "<<width;
+        cout<<"\ndepth of box is "<<depth;
+        cout<<"\nheight of box is "<<height;
+    }
+};
+class boxweight: public box
+{
+    float weight;
+    public:
+    void getdata()
+    {
+        box::getdata();
+        cout<<"\nenter weight of box ";
+        cin>>weight;
+    }
+    void showdata()
+    {
+        box::showdata();
+        cout<<"\nweight of box is "<<weight;
+    }
+};
+class shipment:public boxweight
+{
+    float cost;
+    public:
+    void getdata()
+    {
+        boxweight::getdata();
+        cout<<"\nenter shipping cost ";
+        cin>>cost;
+    }
+    void showdata()
+    {
+        boxweight::showdata();
+        cout<<"\nshipping cost is "<<cost;
+    }
+};
+void main()
+{
+    clrscr();
+    shipment ob;
+    ob.getdata();
+    ob.showdata();
+    getch();
+}
+
+
+
+        </textarea>
+    </body>
+</html>

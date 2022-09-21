@@ -1,0 +1,72 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppclasses.html">Back To C++ Classes</a>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate example of function returning object of a class (class distance is created with data members feet and inches) and function add adds two distance objects and returns the resultant object
+#include<iostream.h>
+#include<conio.h>
+class distance
+{
+    int feet;
+    int inches;
+    public:
+    int getfeet()
+    {
+        return feet;
+    }
+    int getinches()
+    {
+        return inches;
+    }
+    void setfeet(int f)
+    {
+        feet=f;
+    }
+    void setinches(int i)
+    {
+        inches=i;
+    }
+    void getdata()
+    {
+        cout<<"\nenter feet ";
+        cin>>feet;
+        cout<<"\nenter inches ";
+    cin>>inches;
+    }
+    void showdata()
+    {
+        cout<<"\nfeet are "<<feet;
+        cout<<"\ninches are "<<inches;
+    }
+};
+distance add(distance a,distance b)
+{
+    distance c;
+    int totalfeet,totalinches;
+    totalfeet=a.getfeet()+b.getfeet()+(a.getinches()+b.getinches())/12;
+    totalinches=(a.getinches()+b.getinches())%12;
+    c.setfeet(totalfeet);
+    c.setinches(totalinches);
+    return c;
+}
+void main()
+{
+    clrscr();
+    distance a,b,sum;
+    a.getdata();
+    b.getdata();
+    sum=add(a,b);
+    sum.showdata();
+    getch();
+}
+
+    </textarea>
+    </body>
+</html>

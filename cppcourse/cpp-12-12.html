@@ -1,0 +1,48 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppclasses.html">Back To C++ Classes</a>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a reference to object of class student
+#include<iostream.h>
+#include<conio.h>
+class student
+{
+    int rollno;
+    char name[20];
+    int marks;
+    public:
+    void getdata()
+    {
+        cout<<"\nenter rollno ";
+        cin>>rollno;
+        cout<<"\nenter name ";
+        cin>>name;
+        cout<<"\nenter marks ";
+        cin>>marks;
+    }
+    void showdata()
+    {
+        cout<<"\nrollno is "<<rollno;
+        cout<<"\nname is "<<name;
+        cout<<"\nmarks are "<<marks;
+    }
+};
+void main()
+{
+    clrscr();
+    student ob;
+    ob.getdata();
+    student &ob1=ob;
+    ob1.showdata();
+    getch();
+}
+    </textarea>
+    </body>
+</html>

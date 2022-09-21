@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="c1darrays.html"> Back To C Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to find maximum and minimum number in an integer array
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    
+    int a[10]={3,2,12,34,56,78,90,99,97,56};
+    int i;
+    int high=a[0];
+    int low=a[0];
+    clrscr();
+    for(i=1;i<10;i++)
+    {
+        if(a[i]>high)
+    {
+        high=a[i];
+    }
+        if(a[i]<low)
+    {
+        low=a[i];
+    }
+
+}
+    printf("\nhighest element in the array is %d",high);
+    printf("\nlowest element in the array is %d",low);
+    getch();
+}
+        </textarea>
+    </body>
+</html>

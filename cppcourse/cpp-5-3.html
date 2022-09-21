@@ -1,0 +1,35 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppbuiltin.html"> Back To C++ Built-In Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to find area of a triangle using sqrt function in math.h ( sqrt function is used to calculate square root of a number )
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+	int a,b,c;
+	float area,s;
+        clrscr();
+	cout<<"enter side 1 of triangle ";
+	cin>>a;
+	cout<<"enter side 2 of triangle ";
+	cin>>b;
+	cout<<"enter side 3 of striangle ";
+	cin>>c;
+	s=(a+b+c)/2;
+	area=sqrt(s*(s-a)*(s-b)*(s-c));
+	cout<<"area of triangle is "<<area;
+	getch();
+}
+    </textarea>
+    </body>
+</html>

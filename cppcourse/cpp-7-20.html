@@ -1,0 +1,44 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp2darrays.html"> Back To C++ Double Dimensional Arrays Index</a>
+
+        <br><br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input a country name and print its capital  (example of double dimensional arrays of char)
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+    clrscr();
+    char countries[5][20]={"country1","country2","country3","country4","country5"};
+    char capitals[5][20]={"capital1","capital2","capital3","capital4","capital5"};
+    int i;
+    int found=0;
+    char country[20];
+    cout<<"\nenter a country to print capital of ";
+    cin>>country;
+    for(i=0;i<5;i++)
+    {
+        if(strcmp(country,countries[i])==0)
+        {
+            found=1;
+            cout<<"\ncapital is "<<capitals[i];
+            break;
+        }
+    }
+    if(found==0)
+    {
+        cout<<"\nnot found";
+    }
+    getch();
+}
+        </textarea>
+    </body>
+</html>

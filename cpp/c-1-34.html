@@ -1,0 +1,31 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <a href="cbasics.html"> Back To C Basics Index</a>
+        <br>
+        to calculate 10 % discount on price , price is multiplied with 0.1
+        <br>
+        <hr>
+        
+        <textarea rows="40" cols="100">
+//program to input price of an item from user and calculate discount as 10 percent on the price
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	float price,discount;
+        clrscr();
+	printf("enter price of the item ");
+	scanf("%f",&price);
+	discount=0.1f*price;
+	printf("10 percent discount is %f",discount);
+	getch();
+}
+
+</textarea>
+    </body>
+</html>

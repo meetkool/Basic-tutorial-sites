@@ -1,0 +1,43 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppsortsearch.html"> Back To C++ Basic  Index</a>
+        <br>
+       
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate bubble sort on a single dimensional array (program sorts the array in ascending order)
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int arr[5]={50,52,40,30,31};
+	int i,j,temp;
+        clrscr();
+	for(i=0;i<5;i++)
+	{
+		for(j=0;j<4;j++)
+		{
+			if(arr[j]>arr[j+1])
+			{
+				temp=arr[j];
+				arr[j]=arr[j+1];
+				arr[j+1]=temp;
+			}
+		}
+	}
+	for(i=0;i<5;i++)
+	{
+		cout<<arr[i]<<"\n";
+	}
+        getch();
+}
+
+
+        </textarea>
+    </body>
+</html>

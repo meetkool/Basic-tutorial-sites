@@ -1,0 +1,67 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+
+//program to demonstrate single level inheritance, class colourbox is derived from class box in public access mode
+#include<iostream.h>
+#include<conio.h>
+class box
+{
+    int length;
+    int breadth;
+    int height;
+    public:
+    void bgetdata()
+    {
+        cout<<"\nenter length of box ";
+        cin>>length;
+        cout<<"\nenter breadth of box ";
+        cin>>breadth;
+        cout<<"\nenter height of box ";
+        cin>>height;
+    }
+    void bshowdata()
+    {
+        cout<<"\nlength of box is "<<length;
+        cout<<"\nbreadth of box is "<<breadth;
+        cout<<"\nheight of box is "<<height;
+    }
+};
+class colourbox : public box
+{
+    char colour[20];
+    public:
+    void cgetdata()
+    {
+        bgetdata();
+        cout<<"\nenter colour of box ";
+        cin>>colour;
+    }
+    void cshowdata()
+    {
+        bshowdata();
+        cout<<"\ncolour of box is "<<colour;
+    }
+};
+void main()
+{
+    clrscr();
+    colourbox ob;
+    ob.cgetdata();
+    ob.cshowdata();
+    getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

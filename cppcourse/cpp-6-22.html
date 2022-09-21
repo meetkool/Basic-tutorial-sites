@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input an array of 10 integer elements and calculate largest even and odd number from the array
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+    clrscr();
+    int a[10];
+    int i;
+    int leven=0,lodd=1;
+    cout<<"\n\n";
+    for(i=0;i<10;i++)
+    {
+        cout<<"enter element at "<<i+1<<" : ";
+        cin>>a[i];
+    }
+    for(i=0;i<10;i++)
+    {
+        if(a[i]%2==0)
+        {
+            if(a[i]>leven)
+            {
+                leven=a[i];
+            }
+        }
+        else
+        {
+            if(a[i]>lodd)
+            {
+                lodd=a[i];
+            }
+        }
+    }
+    cout<<"\nlargest even number is "<<leven;
+    cout<<"\nlargest odd number is "<<lodd;
+    getch();
+}
+        </textarea>
+    </body>
+</html>

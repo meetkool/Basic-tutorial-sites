@@ -1,0 +1,75 @@
+/* Begins Command Listing Page Style */
+.lis-black {
+    background-color: #151515;
+    color: white;
+}
+
+.lis-white {
+    background-color: #f8f8f8;
+}
+
+.lis-term, .lis-option {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 6px;
+}
+
+.lis-term h3, .lis-option h3 {
+    font-size: 28px;
+    padding: 6px;
+}
+
+.lis-term p, .lis-option p {
+    font-size: 19px;
+    text-align: justify;
+    padding: 6px;
+}
+
+.lis-term .lis-link, .lis-option .lis-link {
+    text-align: center;
+    font-size: 21px;
+    padding-bottom: 4px;
+}
+
+.lis-term .lis-link a, .lis-option .lis-link a {
+    text-decoration: none;
+    color: #73BB32;
+}
+
+.lis-term .lis-link a:hover, .lis-option .lis-link a:hover {
+    color: limegreen;
+    font-weight: bold;
+}
+
+.lis-dash { 
+    background-color: #73BB32;
+    height: 2px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+/* Ends Command Listing Page Style */
+
+@media screen and (max-width: 822px) {
+    
+        .lis-term, .lis-option {
+            width: 95%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            padding: 6px;
+        }
+    
+        .lis-term .lis-link, .lis-option .lis-link {
+            font-size: 18px;
+        }
+    
+        .lis-term p, .lis-option p {
+            font-size: 15px;
+        }
+
+        .lis-term .lis-link, .lis-option .lis-link {
+            font-size: 16px;
+        }
+    
+}

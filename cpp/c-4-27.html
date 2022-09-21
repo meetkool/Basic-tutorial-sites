@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cuserdefined.html"> Back To C User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that computes discount based on price entered by the user (price is passed to function as integer argument , if price is greater than or equal to 1000, discount is calculated as 10 percent else 5 percent )
+#include<stdio.h>
+#include<conio.h>
+void calcdiscount(int);
+void calcdiscount(int price)
+{
+	float discount;
+	if(price>=1000)
+	{
+		discount=0.1*price;
+	}
+	else
+	{
+		discount=0.05*price;
+	}
+	printf("discount is %f",discount);
+}
+void main()
+{
+	int p;
+        clrscr();
+	printf("enter price");
+	scanf("%d",&p);
+	calcdiscount(p);
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

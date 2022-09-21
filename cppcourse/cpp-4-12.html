@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that takes three integer arguments and finds largest of them
+#include<iostream.h>
+#include<conio.h>
+void large(int,int,int);
+void large(int a,int b,int c)
+{
+	int max;
+	max=a;
+	if(b>max)
+	{
+		max=b;
+	}
+	if(c>max)
+	{
+		max=c;
+	}
+	cout<<"largest of three numbers is "<<max;
+}
+void main()
+{
+	int a,b,c;
+        clrscr();
+	cout<<"enter value for a";
+	cin>>a;
+	cout<<"enter value for b";
+	cin>>b;
+	cout<<"enter value for c";
+	cin>>c;
+	large(a,b,c);
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

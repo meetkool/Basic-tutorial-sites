@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="c1darrays.html"> Back To C Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input an integer array of marks in 5 subjects and calculate percentage
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int marks[5];
+	int i,total=0;
+	float percentage;
+	for(i=0;i<5;i++)
+	{
+		printf("\nenter marks in subject %d",i+1);
+		scanf("%d",&marks[i]);
+		total=total+marks[i];
+
+	}
+	printf("total number of marks in five subjects are %d",total);
+	percentage=total/5;
+	printf("\npercentage of student is %f",percentage);
+	getch();
+}
+
+
+        </textarea>
+    </body>
+</html>

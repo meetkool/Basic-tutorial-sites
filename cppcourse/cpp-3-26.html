@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpploops.html"> Back To C++ Loops Index</a>
+     <hr>
+     <br>
+        <textarea rows="40" cols="100">
+//program to find sum of even and odd numbers between a and b using while statement
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int a,b,i;
+	int sumeven=0;
+	int sumodd=0;
+        clrscr();
+	cout<<"enter value for a ";
+	cin>>a;
+	cout<<"enter value for b ";
+	cin>>b;
+	i=a;
+	while(i<=b)
+	{
+		if(i%2==0)
+		{
+			sumeven=sumeven+i;
+		}
+		else
+		{
+			sumodd=sumodd+i;
+		}
+		i++;
+	}
+	cout<<"sum of even numbers between a and b is "<<sumeven;
+	cout<<"sum of odd numbers between a and b is "<<sumodd;
+	getch();
+}
+
+</textarea>
+    </body>
+</html>

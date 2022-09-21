@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp2darrays.html"> Back To C++ Double Dimensional Arrays Index</a>
+
+        <br><br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input marks of 3 students in 3 subjects and find average and total (example of double dimensional arrays)
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int marks[3][3];
+	int i,j;
+	int total[3]={0,0,0};
+	float avg[3]={0.0,0.0,0.0};
+	clrscr();
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			cout<<"\nenter marks of student "<<i+1<<" in subject "<<j+1<<" : ";
+			cin>>marks[i][j];
+		}
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			total[i]=total[i]+marks[i][j];
+		}
+	}
+	for(i=0;i<3;i++)
+	{
+		avg[i]=total[i]/3;
+	}
+	for(i=0;i<3;i++)
+	{
+		cout<<"\ntotal marks of student "<<i+1<<" are : "<<total[i];
+		cout<<"\naverage of student is "<<i+1<<" are : "<<avg[i];
+	}
+	getch();
+}
+        </textarea>
+    </body>
+</html>

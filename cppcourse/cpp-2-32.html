@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppflowofcontrol.html"> Back To C++ Flow of Control Index</a>
+        <br>
+        <br>
+        <hr>
+        
+        <textarea rows="40" cols="100">
+//program to convert fahrenheit temp to celsius and vice versa using if-else statement
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+    int choice;
+    double temp,conv;
+    clrscr();
+    cout<<"\n1. fahrenheit to celsius";
+    cout<<"\n2. celsius to fahrenheit";
+    cout<<"\nenter your choice 1,2";
+    cin>>choice;
+    if(choice==1)
+    {
+        cout<<"\nenter temperature in fahrenheit";
+        cin>>temp;
+        conv=(temp-32)/1.8;
+        cout<<"\ntemperature in celsius is "<<conv;
+    }
+    else
+    {
+        cout<<"\nEnter temperature in celsius ";
+        cin>>temp;
+        conv=(1.8*temp)+32;
+        cout<<"\ntemperature in fahrenheit is "<<conv;
+    }
+    getch();
+}
+</textarea>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that takes two integer arguments and finds largest of them
+#include<iostream.h>
+#include<conio.h>
+void large(int,int);
+void large(int a,int b)
+{
+	if(a>b)
+	{
+		cout<<a<<" is largest of two numbers";
+	}
+	else
+	{
+		cout<<b<<" is largest of two numbers";
+	}
+}
+void main()
+{
+	int a,b;
+        clrscr();
+	cout<<"enter value for a";
+	cin>>a;
+	cout<<"Enter value for b";
+	cin>>b;
+	large(a,b);
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

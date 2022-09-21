@@ -1,0 +1,65 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppclasses.html">Back To C++ Classes</a>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate example of a class containing static data members and static member functions
+#include<iostream.h>
+#include<conio.h>
+class student
+{
+	int rollno;
+	char name[20];
+	int marks;
+	int clas;
+	static int count;
+public:
+	student()
+	{
+            count++;
+	 }
+	void getdata()
+	{
+		cout<<"enter rollno of the student ";
+		cin>>rollno;
+		cout<<"\nenter name of the student ";
+		cin>>name;
+		cout<<"\nenter marks of the student ";
+		cin>>marks;
+		cout<<"\nenter class of the student ";
+		cin>>clas;
+	}
+	void showdata()
+	{
+		cout<<"\nrollno of the student is "<<rollno;
+		cout<<"\nname of student is "<<name;
+		cout<<"\nmarks of student are "<<marks;
+		cout<<"\nclass of student is "<<clas;
+	}
+	static void showcount()
+	{
+        	cout<<"\nnumber of objects created are "<<count;
+	}
+};
+int student::count=0;
+void main()
+{
+	student ob; //object of class student created
+	ob.getdata();
+	ob.showdata();
+	student ob1;
+	student ob2;
+	student ob3;
+	student::showcount();
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

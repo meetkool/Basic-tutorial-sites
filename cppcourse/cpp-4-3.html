@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function to find whether a number is even or odd example 2 (number is passed to function as argument)
+#include<iostream.h>
+#include<conio.h>
+void evenodd(int); //function declaration
+void evenodd(int a) //function definition
+{
+	if(a%2==0)
+	{
+		cout<<"number is even";
+	}
+	else
+	{
+		cout<<"number is odd";
+	}
+}
+void main()
+{
+	int a;
+        clrscr();
+	cout<<"enter a number";
+	cin>>a;
+	evenodd(a); //calling or invoking the function
+	getch();
+}
+
+        </textarea>
+    </body>
+</html>

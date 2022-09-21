@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppstructures.html">Back To C++ Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure student and calculate percentage based on marks (example of array within a structure)
+#include<iostream.h>
+#include<conio.h>
+struct student
+{
+    int rollno;
+    char name[20];
+    int marks[5];
+    float percentage;
+};
+void main()
+{
+    clrscr();
+    student s;
+    float temp=0;
+    int i;
+    cout<<"\nenter rollno of student ";
+    cin>>s.rollno;
+    cout<<"\nenter name of student ";
+    cin>>s.name;
+    for(i=0;i<5;i++)
+    {
+        cout<<"\nenter marks in subject  "<<i+1<<" : ";
+        cin>>s.marks[i];
+        temp=temp+s.marks[i];
+    }
+    cout<<"\ndisplaying the data ";
+    cout<<"\nrollno of student is "<<s.rollno;
+    cout<<"\nname of student is "<<s.name;
+    for(i=0;i<5;i++)
+    {
+        cout<<"\nmarks of student in subject  "<<i+1<<" are "<<s.marks[i];
+    }
+    s.percentage=temp/5;
+    cout<<"\npercentage is "<<s.percentage;
+    getch();
+}
+   </textarea>
+    </body>
+</html>

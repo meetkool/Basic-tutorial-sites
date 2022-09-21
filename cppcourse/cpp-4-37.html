@@ -1,0 +1,35 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that finds yearly salary based on monthly salary passed to function as integer argument
+#include<iostream.h>
+#include<conio.h>
+void yearly(int);
+void yearly(int monthly)
+{
+	int yearlysalary;
+	yearlysalary=12*monthly;
+	cout<<"yearly salary is "<<yearlysalary;
+}
+void main()
+{
+	int monthly;
+        clrscr();
+	cout<<"enter monthly salary of the employee";
+	cin>>monthly;
+	yearly(monthly);
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

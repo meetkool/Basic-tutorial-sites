@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cuserdefined.html"> Back To C User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that takes two integer arguments calculates difference between them
+#include<stdio.h>
+#include<conio.h>
+void difference(int,int);
+void difference(int a,int b)
+{
+	int diff;
+	diff=a-b;
+	printf("difference between two numbers is %d",diff);
+}
+void main()
+{
+	int a,b;
+        clrscr();
+	printf("enter value for a");
+	scanf("%d",&a);
+	printf("enter value for b");
+	scanf("%d",&b);
+	difference(a,b);
+	getch();
+}
+
+        </textarea>
+    </body>
+</html>

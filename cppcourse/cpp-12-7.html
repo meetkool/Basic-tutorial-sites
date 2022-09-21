@@ -1,0 +1,69 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppclasses.html">Back To C++ Classes</a>
+        <br>
+in the code given below getdata() member function inputs data from user, calculate() member function calculates total salary as sum of basic,da and hra, showdata() function displays the data with total and percentage of student
+             <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate example of class employee with data members as ecode,ename,designation,basic,hra,da and total) calculate total function calculates the total salary as sum of basic,da and hra , getdata function inputs data from user and showdata member function displays data 
+#include<iostream.h>
+#include<conio.h>
+class employee
+{
+	int ecode;
+	char ename[20];
+	float basic;
+	float da;
+	float hra;
+	float total;
+	char designation[20];
+public:
+	void getdata();
+	void calculatetotal();
+	void showdata();
+};
+void employee::getdata()
+{
+	cout<<"\nenter employee code ";
+	cin>>ecode;
+	cout<<"\nenter employee name ";
+	cin>>ename;
+	cout<<"\nenter designation of employee ";
+	cin>>designation;
+	cout<<"\nenter basic salary ";
+	cin>>basic;
+	cout<<"\nenter dearness allowance ";
+	cin>>da;
+	cout<<"\nenter house rent allowance ";
+	cin>>hra;
+}
+void employee::calculatetotal()
+{
+	total=basic+da+hra;
+}
+void employee::showdata()
+{
+	cout<<"\nemployee code is "<<ecode;
+	cout<<"\nemployee name is "<<ename;
+	cout<<"\nemployee designation is "<<designation;
+	cout<<"\ntotal salary (basic+da+hra) is "<<total;
+}
+void main()
+{
+	employee ob;
+        clrscr();
+	ob.getdata();
+	ob.calculatetotal();
+	ob.showdata();
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

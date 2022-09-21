@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cflowofcontrol.html"> Back To C Flow of Control Index</a>
+        <br>
+        <br>
+        <hr>
+        
+        <textarea rows="40" cols="100">
+//program to input three numbers and print them in descending order using if-else statement
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,b,c,big,big2,big3;
+        clrscr();
+	printf("\nenter number 1");
+	scanf("%d",&a);
+	printf("\nenter number 2");
+	scanf("%d",&b);
+	printf("\nenter number 3");
+	scanf("%d",&c);
+	big=a;
+	if(b>big)
+	{
+		big=b;
+	}
+	if(c>big)
+	{
+		big=c;
+	}
+	if(a==big)
+	{
+		if(b>c)
+		{
+			big2=b;
+			big3=c;
+		}
+		else
+		{
+			big2=c;
+			big3=b;
+		}
+	}
+	else
+		if(b==big)
+		{
+			if(a>c)
+			{
+				big2=a;
+				big3=c;
+			}
+			else
+			{
+				big2=c;
+				big3=a;
+			}
+		}
+		else
+			if(c==big)
+			{
+				if(a>b)
+				{
+					big2=a;
+					big3=b;
+				}
+				else
+				{
+					big2=b;
+					big3=a;
+				}
+			}
+	printf("%d, %d, %d ",big,big2,big3);
+        getch();
+}
+</textarea>
+</body>
+</html>

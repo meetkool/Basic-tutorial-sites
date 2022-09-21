@@ -1,0 +1,59 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp2darrays.html"> Back To C++ Double Dimensional Arrays Index</a>
+
+        <br><br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input 3x3 matrix and find sum of both diagonals
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+	int a[3][3];
+	int i,j;
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			cout<<"enter element at ["<<i<<"]["<<j<<"]";
+			cin>>a[i][j];
+		}
+	}
+	cout<<"\ndisplaying the matrix\n";
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			cout<<a[i][j]<<"\t";
+		}
+		cout<<"\n";
+	}
+	cout<<"\ndisplaying the sum of diagonal\n";
+	int sum=0;
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			if(i==j)
+			{
+				sum=sum+a[i][j];
+			}
+			if(i+j==2)
+			{
+				sum=sum+a[i][j];
+			}
+		}
+	}
+	cout<<"\nsum of both diagonals is : "<<sum;
+	getch();
+}
+
+        </textarea>
+    </body>
+</html>

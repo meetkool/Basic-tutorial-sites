@@ -1,0 +1,46 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cstructures.html">Back To C++ Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure student with members (rollno,name,marks and clas) and input values from user and then display the values
+#include<stdio.h>
+#include<conio.h>
+struct student
+{
+	int rollno;
+	char name[20];
+	int marks;
+	int clas;
+};
+void main()
+{
+	struct student a;
+	clrscr();
+	printf("enter rollno of student ");
+	scanf("%d",&a.rollno);
+	printf("enter name of student");
+	scanf("%s",a.name);
+	printf("enter marks of student");
+	scanf("%d",&a.marks);
+	printf("enter class of student");
+	scanf("%d",&a.clas);
+	printf("\nnow displaying the values\n");
+	printf("\nrollno of student is %d",a.rollno);
+	printf("\nname of student is %s",a.name);
+	printf("\nmarks of student is %d",a.marks);
+	printf("\nclass of student is %d",a.clas);
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

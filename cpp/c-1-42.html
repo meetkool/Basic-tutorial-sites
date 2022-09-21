@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <a href="cbasics.html"> Back To C Basics Index</a>
+        <br>
+        <hr>
+        a global variable can be accessed from any function in the program, a global variable is common to all functions
+        <br>
+        if a local and global varaible has the name name as in the code below(local and global variable is declared with name a)
+        <br>
+        global variable can be accessed using (::) scope resolution operator
+           <hr>
+        <textarea rows="40" cols="100">
+//program to create local and global variable with the same name and use scope resolution operator(::) to access global variable
+#include<stdio.h>
+#include<conio.h>
+int a=10;
+void main()
+{
+	int a=15;
+        clrscr();
+	printf("\nvalue of local variable a is %d",a);
+	printf("\nvalue of global variable a is %d",::a);
+	getch();
+
+}
+</textarea>
+    </body>
+</html>

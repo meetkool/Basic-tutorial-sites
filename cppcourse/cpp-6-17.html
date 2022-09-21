@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input an char array and pass this array to function
+#include<iostream.h>
+#include<conio.h>
+void printarray(int a[10])
+{
+	int i;
+	cout<<"\nprinting the array\n";
+	for(i=0;i<10;i++)
+	{
+		cout<<a[i]<<"\n";
+	}
+}
+void main()
+{
+	int a[10];
+	int i;
+        clrscr();
+	cout<<"\nenter the elements of integer array\n";
+	for(i=0;i<10;i++)
+	{
+		cout<<"\nenter element at position "<<i<<" : ";
+		cin>>a[i];
+	}
+	printarray(a);
+        getch();
+}
+        </textarea>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppstructures.html">Back To C++ Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure movie with members(movieid, moviename,star1,star2 and price) and input values from user and then display the values
+#include<iostream.h>
+#include<conio.h>
+struct movie
+{
+	int movieid;
+	char moviename[20];
+	char star1[20];
+	char star2[20];
+	float price;
+};
+void main()
+{
+	movie m;   //variable of structure movie created
+	clrscr();
+	cout<<"\nenter movieid ";
+	cin>>m.movieid;
+	cout<<"\nenter movie name ";
+	cin>>m.moviename;
+	cout<<"\nenter star 1 of movie ";
+	cin>>m.star1;
+	cout<<"\nenter star 2 of movie ";
+	cin>>m.star2;
+	cout<<"\nenter price of the movie ";
+	cin>>m.price;
+	cout<<"\ndispalying the values \n";
+	cout<<"\nmovie id is "<<m.movieid;
+	cout<<"\nmovie name is "<<m.moviename;
+	cout<<"\nstar 1 of movie is "<<m.star1;
+	cout<<"\nstar 2 of movie is "<<m.star2;
+	cout<<"\nprice of movie is "<<m.price;
+	getch();
+}
+   </textarea>
+    </body>
+</html>

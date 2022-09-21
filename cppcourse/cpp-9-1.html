@@ -1,0 +1,73 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppmenudriven.html">Back To C++ Menu Driven Functions</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to make a simple calculator using functions and switch statement (example of menu driven program)
+#include<iostream.h>
+#include<conio.h>
+void add(int a,int b)
+{
+	int sum;
+	sum=a+b;
+	cout<<"\nsum of a and b is "<<sum;
+}
+void subtract(int a,int b)
+{
+	int difference;
+	difference=a-b;
+	cout<<"\ndifference between a and b is "<<difference;
+}
+void multiply(int a,int b)
+{
+	int product;
+	product=a*b;
+	cout<<"\nproduct of a and b is "<<product;
+}
+void divide(int a,int b)
+{
+	int quotient;
+	quotient=a/b;
+	cout<<"\nquotient of a divided by b is "<<quotient;
+}
+void main()
+{
+	int a,b;
+	int choice;
+        clrscr();
+	cout<<"\nenter a value for a ";
+	cin>>a;
+	cout<<"\nenter a value for b ";
+	cin>>b;
+	cout<<"\n 1. Add a and b ";
+	cout<<"\n 2. Subtract a and b ";
+	cout<<"\n 3. Multiply a and b ";
+	cout<<"\n 4. Divide a by b ";
+	cout<<"\nenter your choice (1,2,3,4)";
+	cin>>choice;
+	switch(choice)
+	{
+	case 1: add(a,b);
+			break;
+	case 2: subtract(a,b);
+			break;
+	case 3: multiply(a,b);
+			break;
+	case 4: divide(a,b);
+			break;
+	default: cout<<"\nenter a valid choice (1,2,3,4)";
+	}
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppstructures.html">Back To C++ Structures</a>
+        <br>
+        <hr>
+        nested structure means structure within a structure
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure marks with members (physics,chemistry,maths and total) array of structure marks is created and total marks are calculated for each student
+#include<iostream.h>
+#include<conio.h>
+struct student
+{
+    int rollno;
+    int maths;  
+    int chemistry;
+    int physics;
+    int total;
+};
+void main()
+{
+    clrscr();
+    student a[3];
+    int i;
+    cout<<"\nenter the data ";
+    for(i=0;i<3;i++)
+    {
+        cout<<"\nenter rollno ";
+        cin>>a[i].rollno;
+        cout<<"\nenter maths";
+        cin>>a[i].maths;
+        cout<<"\nenter chemistry ";
+        cin>>a[i].chemistry;
+        cout<<"\nenter physics";
+        cin>>a[i].physics;
+        a[i].total=a[i].physics+a[i].maths+a[i].chemistry;
+        cout<<"\ntotal marks are "<<a[i].total;
+    }
+    getch();
+}
+
+   </textarea>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppinheritance.html"> Back To C++ Inheritance  Index</a>
+      <hr>  
+     <br>
+        add theory here
+        <br>member functions in the derived class has the same name as that in base class<br>
+        
+           
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate single level inheritance, class is derived from base class through public access mode
+//member functions in the derived class has the same name as that in base class
+#include<iostream.h>
+#include<conio.h>
+class employee
+{
+	int ecode;
+	char ename[20];
+public:
+	void getdata()
+	{
+		cout<<"\nenter employee code ";
+		cin>>ecode;
+		cout<<"\nenter employee name ";
+		cin>>ename;
+	}
+	void showdata()
+	{
+		cout<<"\nemployee code is "<<ecode;
+		cout<<"\nemployee name is "<<ename;
+	}
+};
+class manager:public employee
+{
+	char title[20];
+public:
+	void getdata()
+	{
+		employee::getdata();
+		cout<<"\nenter title of manager(senior/junior) ";
+		cin>>title;
+	}
+	void showdata()
+	{
+		employee::showdata();
+		cout<<"\ntitle of manager is "<<title;
+	}
+};
+void main()
+{
+	manager ob;
+        clrscr();
+	ob.getdata(); //getdata function of manager class called here which in turns calls getdata function of employee class
+	ob.showdata(); //showdata function of manager class called here which in turns calls showdata function of class employee
+	getch();
+}
+
+        </textarea>
+    </body>
+</html>

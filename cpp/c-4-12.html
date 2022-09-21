@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cuserdefined.html"> Back To C User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that takes three integer arguments and finds largest of them
+#include<stdio.h>
+#include<conio.h>
+void large(int,int,int);
+void large(int a,int b,int c)
+{
+	int max;
+	max=a;
+	if(b>max)
+	{
+		max=b;
+	}
+	if(c>max)
+	{
+		max=c;
+	}
+	printf("largest of three numbers is %d",max);
+}
+void main()
+{
+	int a,b,c;
+        clrscr();
+	printf("enter value for a");
+	scanf("%d",&a);
+	printf("enter value for b");
+	scanf("%d",&b);
+	printf("enter value for c");
+	scanf("%d",&c);
+	large(a,b,c);
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

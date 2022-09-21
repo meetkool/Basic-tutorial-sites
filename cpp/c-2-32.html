@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cflowofcontrol.html"> Back To C Flow of Control Index</a>
+        <br>
+        <br>
+        <hr>
+        
+        <textarea rows="40" cols="100">
+//program to convert fahrenheit temp to celsius and vice versa using switch statement
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int choice;
+    float temp,conv;
+    clrscr();
+    printf("\n1. fahrenheit to celsius");
+    printf("\n2. celsius to fahrenheit");
+    printf("\nenter your choice 1,2");
+    scanf("%d",&choice);
+  switch(choice)
+  {
+  case 1:
+        printf("\nenter temperature in fahrenheit");
+        scanf("%f",&temp);
+        conv=(temp-32)/1.8;
+        printf("\ntemperature in celsius is %f",conv);
+        break;
+  case 2:
+        printf("\nEnter temperature in celsius ");
+        scanf("%f",&temp);
+        conv=(1.8*temp)+32;
+        printf("\ntemperature in fahrenheit is %f",conv);
+        break;
+   default: printf("\nenter choice 1 or 2 ");
+  }
+   getch();
+}
+
+
+</textarea>
+</body>
+</html>

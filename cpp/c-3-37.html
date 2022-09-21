@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cloops.html"> Back To C Loops Index</a>
+     <hr>
+     <br>
+     
+      <hr>
+     <br>
+        <textarea rows="40" cols="100">
+//program to input a number and find whether it is palindrome or not (1221 is a palindrome and 1234 is not a palindrome)
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int n,num,digit,rev=0;
+    clrscr();
+    printf("\nenter the number");
+    scanf("%d",&num);
+    n=num;
+    do
+    {
+        digit=num%10;
+        rev=(rev*10)+digit;
+        num=num/10;
+    }while(num!=0);
+    printf("the reverse of number is %d",rev);
+    if(n==rev)
+    {
+        printf("\nnumber is palindrome");
+    }
+    else
+    {
+        printf("\nnumber is not pelindrome");
+    }
+    getch();
+}
+</textarea>
+    </body>
+</html>

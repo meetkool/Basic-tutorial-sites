@@ -1,0 +1,54 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppstructures.html">Back To C++ Structures</a>
+        <br>
+        <hr>
+        nested structure means structure within a structure
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure student with members (rollno, marks, class and nested structure name) structure name has members (firstname and lastname)(example of nested structures)
+#include<iostream.h>
+#include<conio.h>
+struct name
+{
+	char firstname[20];
+	char lastname[20];
+};
+struct student
+{
+	int rollno;
+	name sname;
+	int marks;
+	int clas;
+};
+void main()
+{
+	student st;
+        clrscr();
+	cout<<"\nenter rollno of student ";
+	cin>>st.rollno;
+	cout<<"\nenter firstname of the student ";
+	cin>>st.sname.firstname;
+	cout<<"\nenter lastname of the student ";
+	cin>>st.sname.lastname;
+	cout<<"\nenter marks of student ";
+	cin>>st.marks;
+	cout<<"\nenter class of student ";
+	cin>>st.clas;
+	cout<<"\n\nDisplaying the values\n\n";
+	cout<<"\nrollno of student is "<<st.rollno;
+	cout<<"\nname of student is "<<st.sname.firstname<<","<<st.sname.lastname;
+	cout<<"\nmarks of student are "<<st.marks;
+	cout<<"\nclass of student is "<<st.clas;
+	getch();
+}
+
+   </textarea>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppconstructors.html">Back To C++ Constructors & Destructors</a>
+     <hr>   
+     <br>
+        a destructor is a special member function in class that has the same name as that of class and is followed by a tilde(~)
+        <br>
+        a destructor is called when memory allocated to object is deallocated
+        <br>
+      
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate destructor in class student
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+class student
+{
+	int rollno;
+	char name[20];
+	int marks;
+public:
+	student()
+	{
+		cout<<"\nconstructor called here";
+		rollno=1;
+		strcpy(name,"abcdef");
+	}
+	~student()
+	{
+		cout<<"\ndestructor called here";
+	}
+	void showdata()
+	{
+		cout<<"\nrollno is "<<rollno;
+		cout<<"\nname is "<<name;
+	}
+};
+void main()
+{
+	student ob;
+        clrscr();
+	ob.showdata();
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

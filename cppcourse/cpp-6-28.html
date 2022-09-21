@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input a string and replace each space with a hyphen(-) using for loop
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+	char str[20];
+	int i;
+        clrscr();
+	cout<<"\nenter a string ";
+	gets(str);
+	for(i=0;str[i]!='\0';i++)
+	{
+		if(str[i]==' ')
+		{
+			str[i]='-';
+		}
+	}
+	cout<<"\nconverted string is "<<str;
+	getch();
+}
+
+
+ </textarea>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppmenudriven.html">Back To C++ Menu Driven Programs</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to make a simple calculator using switch statement without using functions (example of menu driven program)
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int a,b;
+	int choice;
+        clrscr();
+	cout<<"\nenter a value for a ";
+	cin>>a;
+	cout<<"\nenter a value for b ";
+	cin>>b;
+	cout<<"\n 1. Add a and b ";
+	cout<<"\n 2. Subtract a and b ";
+	cout<<"\n 3. Multiply a and b ";
+	cout<<"\n 4. Divide a by b ";
+	cout<<"\nenter your choice (1,2,3,4)";
+	cin>>choice;
+	switch(choice)
+	{
+	case 1:	cout<<"\nsum of a and b is "<<a+b;
+			break;
+	case 2: cout<<"\ndifference between a and b is "<<a-b;
+			break;
+	case 3: cout<<"\nproduct of a and b is "<<a*b;
+			break;
+	case 4:	cout<<"\nquotient of a divided by b is "<<a/b;
+			break;
+	default: cout<<"\nenter a valid choice (1,2,3,4)";
+	}
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

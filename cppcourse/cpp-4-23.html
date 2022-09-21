@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create two functions to calculate area and perimeter of square based on user choice
+#include<iostream.h>
+#include<conio.h>
+void area(int);
+void perimeter(int);
+void area(int side)
+{
+	int ar;
+	ar=side*side;
+	cout<<"area of square is "<<ar;
+}
+void perimeter(int side)
+{
+	int per;
+	per=4*side;
+	cout<<"perimeter of square is "<<per;
+}
+void main()
+{
+	int ch;
+	int side;
+        clrscr();
+	cout<<"enter side of square";
+	cin>>side;
+	cout<<"enter your choice 1 for area or 2 for perimeter";
+	cin>>ch;
+	if(ch==1)
+	{
+		area(side);
+	}
+	if(ch==2)
+	{
+		perimeter(side);
+	}
+	getch();
+}
+    </textarea>
+    </body>
+</html>

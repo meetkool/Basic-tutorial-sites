@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppconstructors.html">Back To C++ Constructors & Destructors</a>
+        <br>
+        <br>
+      
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate example of class student with data members (rollno, name, marks, clas) and contains member functions (showdata), class also contains a default constructor which initializes the data members
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+class student
+{
+	int rollno;
+	char name[20];
+	int marks;
+	int clas;
+public:
+	student() //a default constructor
+	{
+		rollno=10;
+		strcpy(name,"abcdef");
+		marks=90;
+		clas=11;
+	}
+	void showdata()
+	{
+		cout<<"\nrollno of student is "<<rollno;
+		cout<<"\nname of student is "<<name;
+		cout<<"\nmarks of student are "<<marks;
+		cout<<"\nclass of student is "<<clas;
+	}
+};
+void main()
+{
+	student ob; //object of class student is created and constructor is called which initialises the data members
+	clrscr();
+        ob.showdata();
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

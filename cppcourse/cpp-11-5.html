@@ -1,0 +1,74 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpppointers.html">Back To C++ Pointers</a>
+        <br>
+        <br>
+       
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a pointer to a structure variable which has a pointer to nested structure variable 
+#include<iostream.h>
+#include<conio.h>
+struct salary
+{
+    int da;
+    int hra;
+    int basic;
+};
+struct address
+{
+    int houseno;
+    char street[20];
+    char city[20];
+    char state[20];
+};
+struct employee
+{
+    int ecode;
+    char ename[20];
+    salary *sal;
+    address *addr;
+};
+void main()
+{
+    clrscr();
+    employee *e;
+    cout<<"\nenter employee code ";
+    cin>>e->ecode;
+    cout<<"\nenter employee name ";
+    cin>>e->ename;
+    cout<<"\nenter employee basic salary ";
+    cin>>e->sal->basic;
+    cout<<"\nenter employee hra ";
+    cin>>e->sal->hra;
+    cout<<"\nenter employee da ";
+    cin>>e->sal->da;
+    cout<<"\nenter houseno ";
+    cin>>e->addr->houseno;
+    cout<<"\nenter street ";
+    cin>>e->addr->street;
+    cout<<"\nenter city ";
+    cin>>e->addr->city;
+    cout<<"\nenter state ";
+    cin>>e->addr->state;
+    cout<<"\nDisplaying data ";
+    cout<<"\nemployee code is "<<e->ecode;
+    cout<<"\nemployee name is "<<e->ename;
+    cout<<"\nemployee basic salary is "<<e->sal->basic;
+    cout<<"\nemployee hra is "<<e->sal->hra;
+    cout<<"\nemployee da is "<<e->sal->da;
+    cout<<"\nemployee house no is "<<e->addr->houseno;
+    cout<<"\nemployee street is "<<e->addr->street;
+    cout<<"\nemployee city is "<<e->addr->city;
+    cout<<"\nemployee state is "<<e->addr->state;
+    getch();
+}
+    </textarea>
+    </body>
+</html>

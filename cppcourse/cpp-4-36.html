@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that returns volume of box based on width,depth and height passed to function as integer arguments
+#include<iostream.h>
+#include<conio.h>
+int volume(int,int,int);
+int volume(int width,int depth,int height)
+{
+	float vol;
+	vol=width*depth*height;
+	return vol;
+}
+void main()
+{
+	int width,depth,height;
+	int vol;
+        clrscr();
+	cout<<"enter width of box";
+	cin>>width;
+	cout<<"enter depth of box";
+	cin>>depth;
+	cout<<"enter height of box ";
+	cin>>height;
+	vol=volume(width,depth,height);
+	cout<<"volume of box is "<<vol;
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

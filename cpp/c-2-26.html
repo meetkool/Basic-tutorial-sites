@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cflowofcontrol.html"> Back To C Flow of Control Index</a>
+        <br>
+        <br>
+        <hr>     
+        day is taken as input in number
+        <br>
+        if day is entered as 1 , day is displayed as monday
+        <br>
+        if day is entered as 2 , day is displayed as tuesday
+          <br>
+        if day is entered as 3 , day is displayed as wednesday
+        
+        <br>
+        if day is entered as 4 , day is displayed as thursday
+        
+        <br>
+        if day is entered as 5 , day is displayed as friday
+        
+        <br>
+        if day is entered as 6 , day is displayed as saturday
+        
+        <br>
+        if day is entered as 7 , day is displayed as sunday
+       
+        <br>
+        if day is entered other than 1,2,3,4,,5,6,7 , message is displayed as <b>enter a day between 1 and 7</b>
+        
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate switch-case statement example 1, displaying day of the week
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int day;
+        clrscr();
+	printf("enter a day in number (1-7)");
+	scanf("%d",&day);
+	switch(day)
+	{
+	case 1:
+		printf("monday");
+		break;
+	case 2:
+		printf("tuesday");
+                break;
+	case 3:
+		printf("wednesday");
+		break;
+	case 4:
+		printf("thursday");
+		break;
+	case 5:
+		printf("friday");
+		break;
+	case 6:
+		printf("saturday");
+		break;
+	case 7:
+		printf("sunday");
+		break;
+	default:
+		printf("enter a day between 1 and 7");
+	}
+	getch();
+}
+
+</textarea>
+    </body>
+</html>

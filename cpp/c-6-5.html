@@ -1,0 +1,48 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cstructures.html">Back To C Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure movie with members(movieid, moviename,star1,star2 and price) and input values from user and then display the values
+#include<stdio.h>
+#include<conio.h>
+struct movie
+{
+	int movieid;
+	char moviename[20];
+	char star1[20];
+	char star2[20];
+	float price;
+};
+void main()
+{
+	struct movie m;   //variable of structure movie created
+	clrscr();
+	printf("\nenter movieid ");
+	scanf("%d",&m.movieid);
+	printf("\nenter movie name ");
+	scanf("%s",m.moviename);
+	printf("\nenter star 1 of movie ");
+	scanf("%s",m.star1);
+	printf("\nenter star 2 of movie ");
+	scanf("%s",m.star2);
+	printf("\nenter price of the movie ");
+	scanf("%f",&m.price);
+	printf("\ndispalying the values \n");
+	printf("\nmovie id is %d",m.movieid);
+	printf("\nmovie name is %s",m.moviename);
+	printf("\nstar 1 of movie is %s",m.star1);
+	printf("\nstar 2 of movie is %s",m.star2);
+	printf("\nprice of movie is %f",m.price);
+	getch();
+}
+   </textarea>
+    </body>
+</html>

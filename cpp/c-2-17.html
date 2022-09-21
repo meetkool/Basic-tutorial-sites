@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cflowofcontrol.html"> Back To C Flow of Control Index</a>
+        <br>
+        <br>
+        <hr>        
+        <textarea rows="40" cols="100">
+//program to input three numbers and find smallest of three numbers using if-else statement
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,b,c,min;
+	clrscr();
+	printf("enter value for a");
+	scanf("%d",&a);
+	printf("enter value for b");
+	scanf("%d",&b);
+	printf("enter value for c");
+	scanf("%d",&c);
+	min=a;
+	if(b<min)
+	{
+		min=b;
+	}
+	if(c<min)
+	{
+		min=c;
+	}
+	printf("smallest number in a,b,c is %d",min);
+	getch();
+}
+
+</textarea>
+    </body>
+</html>

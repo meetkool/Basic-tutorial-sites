@@ -1,0 +1,60 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppclasses.html">Back To C++ Classes</a>
+        <br>
+         <br>
+       a class in c++ is a group of data members and member functions that operate on data members
+       <br>
+       memory is allocated to a class when an object of the class is created
+       <br>
+       public members of a class can be accessed using dot operator(.) with the object of the class
+       <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate example of class book that contains two public member functions getdata() and showdata() and four data members (bookid,name,price and author)
+#include<iostream.h>
+#include<conio.h>
+class book
+{
+	int bookid;
+	char name[20];
+	float price;
+	char author[20];
+public:
+	void getdata()
+	{
+		cout<<"\nenter book id ";
+		cin>>bookid;
+		cout<<"\nenter name of the book ";
+		cin>>name;
+		cout<<"\nenter price of book ";
+		cin>>price;
+		cout<<"\nenter author of book ";
+		cin>>author;
+	}
+	void showdata()
+	{
+		cout<<"\nbook id is "<<bookid;
+		cout<<"\nbook name is "<<name;
+		cout<<"\nprice of book is "<<price;
+		cout<<"\nauthor of the book is "<<author;
+	}
+};
+void main()
+{
+	book ob; // object of class book is created here
+        clrscr();
+	ob.getdata();
+	ob.showdata();
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppstructures.html">Back To C++ Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure student and creating array of structure of 3 variables (example of array of structure variables)
+#include<iostream.h>
+#include<conio.h>
+struct student
+{
+	int rollno;
+	char name[20];
+	int marks;
+};
+void main()
+{
+	student s[3];
+	int i;
+        clrscr();
+	for(i=0;i<3;i++)
+	{
+		cout<<"\nenter rollno of student "<<i+1<<" : ";
+		cin>>s[i].rollno;
+		cout<<"\nenter name of student "<<i+1<<" : ";
+		cin>>s[i].name;
+		cout<<"\nenter marks of student "<<i+1<<" : ";
+		cin>>s[i].marks;
+	}
+	cout<<"\ndisplaying the values \n";
+	for(i=0;i<3;i++)
+	{
+		cout<<"\nrollno of student "<<i+1<<" is "<<s[i].rollno;
+		cout<<"\nname of student "<<i+1<<" is "<<s[i].name;
+		cout<<"\nmarks of student "<<i+1<<" is "<<s[i].marks;
+	}
+        getch();
+}
+
+   </textarea>
+    </body>
+</html>

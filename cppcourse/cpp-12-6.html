@@ -1,0 +1,82 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppclasses.html">Back To C++ Classes</a>
+        <br>
+in the code given below getdata() member function inputs data from user, calculate() member function calculates total and percentage of student and showdata() function displays the data with total and percentage of student
+             <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate example of class student with array marks having 3 integer elements as a datamember of the class (datamembers total and percentage are calculated using member function calculate)
+#include<iostream.h>
+#include<conio.h>
+class student
+{
+	int rollno;
+	char name[20];
+	int clas;
+	float marks[3];
+	float total;
+	float percentage;
+public:
+	void getdata();
+	void showdata();
+	void calculate();
+};
+void student::getdata()
+{
+	int i;
+	cout<<"\nenter rollno of student ";
+	cin>>rollno;
+	cout<<"\nenter name of student ";
+	cin>>name;
+	cout<<"\nenter class of student ";
+	cin>>clas;
+	for(i=0;i<3;i++)
+	{
+		cout<<"\nenter marks of student in subject "<<i+1<<" : ";
+		cin>>marks[i];
+	}
+
+}
+void student::showdata()
+{
+	int i;
+	cout<<"\nrollno of student is "<<rollno;
+	cout<<"\nname of student is "<<name;
+	cout<<"\nclass of student is "<<clas;
+	for(i=0;i<3;i++)
+	{
+		cout<<"\nmarks of student in subject "<<i+1<<" : "<<marks[i];
+	}
+	cout<<"\ntotal marks of student in three subjects are "<<total;
+	cout<<"\npercentage of student is "<<percentage;
+}
+void student::calculate()
+{
+		total=0;
+		int i;
+		for(i=0;i<3;i++)
+		{
+			total=total+marks[i];
+		}
+		percentage=total/3;
+}
+void main()
+{
+	student ob;
+        clrscr();
+	ob.getdata();
+	ob.calculate();
+	ob.showdata();
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

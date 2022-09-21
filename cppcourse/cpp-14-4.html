@@ -1,0 +1,76 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppinheritance.html"> Back To C++ Inheritance  Index</a>
+      <hr>  
+     <br>
+        add theory here
+       
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate multiple inheritance, classes are derived in public access mode from base classes
+#include<iostream.h>
+#include<conio.h>
+class A
+{
+	int a;
+public:
+	void agetdata()
+	{
+		cout<<"\nenter value for a ";
+		cin>>a;
+	}
+	void ashowdata()
+	{
+		cout<<"\nvalue of a is "<<a;
+	}
+};
+class B
+{
+	int b;
+public:
+	void bgetdata()
+	{
+		cout<<"\nenter value for b ";
+		cin>>b;
+	}
+	void bshowdata()
+	{
+		cout<<"\nvalue of b is "<<b;
+	}
+};
+class C: public A ,public B
+{
+	int c;
+public:
+	void cgetdata()
+	{
+		cout<<"\nenter value for c ";
+		cin>>c;
+	}
+	void cshowdata()
+	{
+		cout<<"\nvalue for c is "<<c;
+	}
+};
+void main()
+{
+	C ob;
+        clrscr();
+	ob.agetdata();
+	ob.bgetdata();
+	ob.cgetdata();
+	ob.ashowdata();
+	ob.bshowdata();
+	ob.cshowdata();
+	getch();
+}
+
+        </textarea>
+    </body>
+</html>

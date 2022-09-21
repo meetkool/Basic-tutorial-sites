@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cloops.html"> Back To C Loops Index</a>
+     <hr>
+     <br>
+    
+      <hr>
+     <br>
+        <textarea rows="40" cols="100">
+//program to input a number and count number of digits in the number
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    
+    int num,digit;
+    int count=0;
+    clrscr();
+    printf("\nenter the number ");
+    scanf("%d",&num);
+    do
+    {
+        digit=num%10;
+        num=num/10;
+    count++;
+    }while(num!=0);
+    printf("\nthe number of digits in the number are %d",count);
+    getch();
+}
+</textarea>
+    </body>
+</html>

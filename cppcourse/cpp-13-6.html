@@ -1,0 +1,86 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppconstructors.html">Back To C++ Constructors & Destructors</a>
+        <br>
+        <
+        <br>
+      
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate constructor overloading in class student
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+class student
+{
+	int rollno;
+	char name[20];
+	int marks;
+	int clas;
+public:
+	student()   //constructor 1
+	{
+		rollno=1;
+		strcpy(name,"abcdef");
+		marks=90;
+		clas=11;
+	}
+	student(int srollno)  //constructor 2
+	{
+		rollno=srollno;
+		strcpy(name,"abcdef");
+		marks=90;
+		clas=11;
+	}
+	student(int srollno,char sname[20])    //constructor 3
+	{
+		rollno=srollno;
+		strcpy(name,sname);
+		marks=90;
+		clas=11;
+	}
+	student(int srollno,char sname[20],int smarks)   //constructor 4
+	{
+		rollno=srollno;
+		strcpy(name,sname);
+		marks=smarks;
+		clas=11;
+	}
+	student(int srollno,char sname[20],int smarks,int sclas) //constructor 5
+	{
+		rollno=srollno;
+		strcpy(name,sname);
+		marks=smarks;
+		clas=sclas;
+	}
+	void showdata()
+	{
+		cout<<"\nrollno is "<<rollno;
+		cout<<"\nname is "<<name;
+		cout<<"\nmarks are "<<marks;
+		cout<<"\nclass is "<<clas;
+	}
+};
+int main()
+{
+	student ob1;  //constructor 1 called here
+	ob1.showdata();
+	student ob2(2); //constructor 2 called here
+	ob2.showdata();
+	student ob3(3,"derdre"); // constructor 3 called here
+	ob3.showdata();
+	student ob4(4,"abcdef",89); // constructor 4 called here
+	ob4.showdata();
+	student ob5(5,"xyxyz",90,11);  //constructor 5 called here
+	ob5.showdata();
+	return 0;
+}
+
+    </textarea>
+    </body>
+</html>

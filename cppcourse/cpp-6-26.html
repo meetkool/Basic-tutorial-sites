@@ -1,0 +1,36 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to convert a string to upper case (capital letters) (without using strupr function in string.h)
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+    clrscr();
+    char str[10];
+    int i;
+    cout<<"\nenter a string ";
+    cin>>str;
+    cout<<"\noriginal string is "<<str;
+    for(i=0;str[i]!='\0';i++)
+    {
+        if((str[i]>='a') && (str[i]<='z'))
+        {
+            str[i]=str[i]-32;
+        }
+    }
+    cout<<"\nconverted string is "<<str;
+    getch();
+}
+ </textarea>
+    </body>
+</html>

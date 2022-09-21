@@ -1,0 +1,53 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp2darrays.html"> Back To C++ Double Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input 2x2 matrix (double dimensional array) and display transpose of the matrix
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int a[2][2];
+	int i,j;
+        clrscr();
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			cout<<"enter element at ["<<i<<"]["<<j<<"]";
+			cin>>a[i][j];
+		}
+	}
+	cout<<"\ndisplaying the matrix\n";
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			cout<<a[i][j]<<"\t";
+		}
+		cout<<"\n";
+	}
+	cout<<"\ndisplaying the transpose matrix\n";
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			cout<<a[j][i]<<"\t";
+		}
+		cout<<"\n";
+	}
+	getch();
+}
+
+
+        </textarea>
+    </body>
+</html>

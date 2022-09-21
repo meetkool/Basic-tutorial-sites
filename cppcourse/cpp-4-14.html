@@ -1,0 +1,46 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create two functions to calculate area and perimeter of rectangle (length and breadth of rectangle are passed to functions as arguments)
+#include<iostream.h>
+#include<conio.h>
+void area(int,int);
+void perimeter(int,int);
+void area(int length,int breadth)
+{
+	int ar;
+	ar=length*breadth;
+	cout<<"area of rectangle is "<<ar;
+}
+void perimeter(int length,int breadth)
+{
+	int per;
+	per=2*(length+breadth);
+	cout<<"perimeter of rectangle is "<<per;
+}
+void main()
+{
+	int l,b;
+        clrscr();
+	cout<<"enter length of rectangle";
+	cin>>l;
+	cout<<"enter breadth of rectangle";
+	cin>>b;
+	area(l,b);
+	perimeter(l,b);
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

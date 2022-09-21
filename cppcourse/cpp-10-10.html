@@ -1,0 +1,66 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppstructures.html">Back To C++ Structures</a>
+        <br>
+        <hr>
+        nested structure means structure within a structure
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure employee with members (ecode,ename ,salary and nested structure address) structure address has members (houseno,street,city and state)(example of nested structures)
+#include<iostream.h>
+#include<conio.h>
+struct address
+{
+	int houseno;
+	char street[20];
+	char city[20];
+	char state[20];
+};
+struct employee
+{
+	int ecode;
+	char ename[20];
+	float salary;
+	address addr;
+
+};
+void main()
+{
+	employee emp;
+        clrscr();
+	cout<<"enter ecode of employee ";
+	cin>>emp.ecode;
+	cout<<"enter name of employee ";
+	cin>>emp.ename;
+	cout<<"enter salary of employee";
+	cin>>emp.salary;
+	cout<<"\nInput Address Details\n";
+	cout<<"enter houseno";
+	cin>>emp.addr.houseno;
+	cout<<"enter street";
+	cin>>emp.addr.street;
+	cout<<"enter city";
+	cin>>emp.addr.city;
+	cout<<"enter state";
+	cin>>emp.addr.state;
+	cout<<"\nNow Displaying the Values\n";
+	cout<<"\necode of employee is "<<emp.ecode;
+	cout<<"\nname of employee is "<<emp.ename;
+	cout<<"\nsalary of employee is "<<emp.salary;
+	cout<<"\nNow displaying address details\n";
+	cout<<"\nhouse no of employee is "<<emp.addr.houseno;
+	cout<<"\nstreet is "<<emp.addr.street;
+	cout<<"\ncity is "<<emp.addr.city;
+	cout<<"\nstate is "<<emp.addr.state;
+	getch();
+}
+
+   </textarea>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpppointers.html">Back To C++ Pointers</a>
+        <br>
+        <br>
+       
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a pointer to an object of class student and access public members of class through pointer
+#include<iostream.h>
+#include<conio.h>
+class student
+{
+	int rollno;
+	char name[20];
+	int marks;
+	int clas;
+public:
+	void getdata()
+	{
+		cout<<"enter rollno of the student ";
+		cin>>rollno;
+		cout<<"\nenter name of the student ";
+		cin>>name;
+		cout<<"\nenter marks of the student ";
+		cin>>marks;
+		cout<<"\nenter class of the student ";
+		cin>>clas;
+	}
+	void showdata()
+	{
+		cout<<"\nrollno of the student is "<<rollno;
+		cout<<"\nname of student is "<<name;
+		cout<<"\nmarks of student are "<<marks;
+		cout<<"\nclass of student is "<<clas;
+	}
+};
+void main()
+{
+
+	student ob;
+	student *ptr=&ob;
+        clrscr();
+	ptr->getdata();
+	ptr->showdata();
+	getch();
+}
+    </textarea>
+    </body>
+</html>

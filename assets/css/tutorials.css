@@ -1,0 +1,245 @@
+/*Begins Tutorial Page Style*/
+.tut-cont {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+.tut-main {
+    background-color: #333333;
+    text-align: center;
+    color: white;
+    float: left;
+}
+
+.tut-left {
+    float: left;
+    width: 30%;
+    text-align: center;
+    height: 100%;
+}
+
+.tut-left ol { 
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.tut-left li {
+    padding: 20px;
+}
+
+.tut-right {
+    background-color: #333333;
+    width: 70%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+.tut-right h2, .tut-left h2, .tut-main h2 {
+    padding-top: 30px;
+    font-size: 45px; 
+}
+
+.tut-right h3, .tut-main h3 { 
+    text-align: left;
+    margin-left: 10%;
+    padding-top: 25px;
+    font-size: 35px;
+    color: #73BB32;
+}
+
+.tut-right p, .tut-main p {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tut-image {
+    width: 70%;
+    border-style: solid;
+    border-width: 5px; 
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.tut-iframe {
+    font-size: 23px;
+    padding: 20px;
+}
+
+.tut-iframe iframe {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 35vh;
+}
+
+.tut-prev:link, .tut-prev:visited, .tut-next:link, .tut-next:visited {
+    background-color: #73BB32;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    width: 15%;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+    margin-bottom: 2%;
+}
+
+.tut-prev:link, .tut-prev:visited {
+    
+}
+
+.tut-next:link, .tut-next:visited {
+    float: right;
+}
+
+.tut-prev:hover, .tut-prev:active, .tut-next:hover, .tut-next:active {
+    background-color: #2BC848;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+}
+
+.tut-option {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 6px;
+}
+
+.tut-option h3 {
+    font-size: 28px;
+    padding: 6px;
+}
+
+.tut-option p {
+    font-size: 19px;
+    text-align: justify;
+    padding: 6px;
+}
+
+.tut-option .tut-link {
+    text-align: center;
+    font-size: 21px;
+    padding-bottom: 4px;
+}
+
+.tut-option .tut-link a {
+    text-decoration: none;
+    color: #73BB32;
+}
+
+.tut-option .tut-link a:hover {
+    color: limegreen;
+    font-weight: bold;
+}
+
+.tut-dash { 
+    background-color: #73BB32;
+    height: 2px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+/*Ends Tutorial Page Style*/
+
+@media screen and (max-width: 1380px) {
+ 
+    .tut-left li {
+        padding: 5px;
+        text-align: left;
+    }
+    
+    .tut-left ol { 
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+}
+
+@media screen and (max-width: 822px) {
+ 
+    .tut-option {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        padding: 6px;
+    }
+    
+    .tut-option p {
+        font-size: 15px;
+    }
+    
+    .tut-right, .tut-left {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    
+    .tut-left {
+        position:relative;
+    }
+    
+    .tut-left ol { 
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .tut-left li {
+        padding: 5px;
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    .tut-right {
+        border-style: none;
+        border-width: 0px;
+    }
+
+    .tut-right h2, .tut-left h2, .tut-main h2 {
+        padding-top: 6px;
+        font-size: 30px; 
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+    }
+
+    .tut-right h3, .tut-main h3 { 
+        padding-top: 10px;
+        font-size: 28px;
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+    }
+    
+    .tut-right p, .tut-main p { 
+        font-size: 16px;
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+    }
+    
+    .tut-image {
+        width: 90%;
+        border-style: none;
+        border-width: 0px; 
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .tut-try {
+        display: none;
+    }
+    
+    .tut-next, .tut-prev, .tut-prev:link, .tut-prev:visited, .tut-next:link, .tut-next:visited {
+        width: 30%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+}

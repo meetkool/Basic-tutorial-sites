@@ -1,0 +1,35 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpppointers.html">Back To C++ Pointers</a>
+        <br>
+        <br>
+        a pointer can be used to store the address of a variable, for example an integer pointer can store address of a integer variable. a float pointer can store address of a float variable
+        <br>
+        value of a variable can be retrieved through pointer to that variable using dereference operator(*)
+      
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a float pointer to float variable
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	float a;
+	float *ptr;
+	clrscr();
+	cout<<"\nenter a value for a ";
+	cin>>a;
+	ptr=&a;
+	cout<<"\naddress of variable a is "<<ptr;
+	cout<<"\nvalue of a can also be retrieved through pointer, value of a is "<<*ptr;
+	getch();
+}
+    </textarea>
+    </body>
+</html>

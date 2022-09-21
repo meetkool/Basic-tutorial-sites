@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpploops.html"> Back To C++ Loops Index</a>
+     <hr>
+     program to print pattern
+     <br>
+     1
+     <br>
+     1  2
+     <br>
+     1 2 3
+     <br>
+     1 2 3 4
+     <br>
+     1 2 3 4 5<br>
+     <hr>
+     <br>
+     <br>
+        <textarea rows="40" cols="100">
+//program to input a number n and print pattern of numbers from 1 to n (example of nested loop)
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int n;
+	int i,j;
+        clrscr();
+	cout<<"\nenter a value for n ";
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			cout<<j<<"\t";
+		}
+		cout<<"\n";
+	}
+	getch();
+}
+</textarea>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppmenudriven.html">Back To C++ Menu Driven Programs</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//menu driven program to find area of triangle,circle,rectangle,square using switch statement (example of menu driven program)
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+void triangle(int side1,int side2,int side3)
+{
+	float area,s;
+	s=(side1+side2+side3)/2;
+	area=sqrt(s*(s-side1)*(s-side2)*(s-side3));
+	cout<<"\narea of triangle is "<<area;
+}
+void circle(int radius)
+{
+	float area;
+	area=3.14*radius*radius;
+	cout<<"\narea of circle is "<<area;
+}
+void square(int side)
+{
+	float area;
+	area=side*side;
+	cout<<"\narea of square is "<<area;
+}
+void rectangle(int length,int breadth)
+{
+	float area;
+	area=length*breadth;
+	cout<<"\narea of rectangle is "<<area;
+}
+void main()
+{
+
+	int side1,side2,side3,side,length,breadth,radius;
+	int choice;
+        clrscr();
+	cout<<"\nMenu to Find Area     ";
+	cout<<"\n1. Triangle ";
+	cout<<"\n2. Circle ";
+	cout<<"\n3. Square ";
+	cout<<"\n4. Rectangle ";
+	cout<<"\nEnter your choice (1,2,3,4) ";
+	cin>>choice;
+	switch(choice)
+	{
+		case 1: cout<<"\nenter side 1 of triangle ";
+				cin>>side1;
+				cout<<"\nenter side 2 of triangle ";
+				cin>>side2;
+				cout<<"\nenter side 3 of triangle ";
+				cin>>side3;
+				triangle(side1,side2,side3);
+				break;
+		case 2: cout<<"\nEnter radius of circle ";
+				cin>>radius;
+				circle(radius);
+				break;
+		case 3: cout<<"\nEnter side of square ";
+				cin>>side;
+				square(side);
+				break;
+		case 4: cout<<"\nenter length of rectangle ";
+				cin>>length;
+				cout<<"\nenter breadth of rectangle ";
+				cin>>breadth;
+				rectangle(length,breadth);
+				break;
+		default:cout<<"enter a valid choice (1,2,3,4)";
+	}
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

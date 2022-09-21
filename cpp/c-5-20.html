@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="c1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to initialize an array of 10 elements and find smallest even and odd number
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    
+    int a[10]={1,20,190,4,7,8,9,10,11,13};
+    int i;
+    int smalleven=a[9];
+    int smallodd=a[9];
+    clrscr();
+    for(i=0;i<10;i++)
+    {
+        if(a[i]%2==0)
+        {
+            if(a[i]<smalleven)
+            {
+                smalleven=a[i];
+            }
+        }
+        else
+        {
+            if(a[i]<smallodd)
+            {
+                smallodd=a[i];
+            }
+        }
+    }
+    printf("\n\nsmallest even number is %d",smalleven);
+    printf("\n\nsmallest odd number is %d",smallodd);
+    getch();
+}
+        </textarea>
+    </body>
+</html>

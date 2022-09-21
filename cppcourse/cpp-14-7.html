@@ -1,0 +1,53 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppinheritance.html"> Back To C++ Inheritance  Index</a>
+        
+       
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate multiple inheritance, example of virtual base classes
+#include<iostream.h>
+#include<conio.h>
+class Base
+{
+public:
+	int a;
+};
+class D1 : virtual public Base
+{
+public:
+	int b;
+
+};
+class D2 : virtual public Base
+{
+public:
+	int c;
+};
+class D3:public D1, public D2
+{
+public:
+	int total;
+};
+void main()
+{
+	D3 ob;
+        clrscr();
+	ob.a=25; //unambigous
+	ob.b=50;
+	ob.c=75;
+	ob.total=ob.a+ob.b+ob.c; // unamibigous
+	cout<<ob.a<<"\t"<<ob.b<<"\t"<<ob.c<<"\t"<<ob.total;
+	getch();
+}
+
+
+        </textarea>
+    </body>
+</html>

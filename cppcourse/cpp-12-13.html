@@ -1,0 +1,56 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppclasses.html">Back To C++ Classes</a>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a class box with data members (width,depth and height) and member functions (getdata,showdata and volume)(volume member function calculates the volume of the box )
+#include<iostream.h>
+#include<conio.h>
+class box
+{
+	int width;
+	int depth;
+	int height;
+public:
+	void getdata()
+	{
+		cout<<"\nenter width of box ";
+		cin>>width;
+		cout<<"\nenter depth of box ";
+		cin>>depth;
+		cout<<"\nenter height of box ";
+		cin>>height;
+	}
+	void volume()
+	{
+		int vol;
+		vol=width*depth*height;
+		cout<<"\nvolume of box is "<<vol;
+	}
+	void showdata()
+	{
+		cout<<"\nwidth of box is "<<width;
+		cout<<"\ndepth of box is "<<depth;
+		cout<<"\nheight of box is "<<height;
+	}
+};
+void main()
+{
+	box ob;
+        clrscr();
+	ob.getdata();
+	ob.showdata();
+	ob.volume();
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

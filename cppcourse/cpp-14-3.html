@@ -1,0 +1,71 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppinheritance.html"> Back To C++ Inheritance  Index</a>
+      <hr>  
+     <br>
+        add theory here
+       
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//example of single level inheritance, class is derived from base class through protected access mode
+#include<iostream.h>
+#include<conio.h>
+class employee
+{
+protected:
+	int ecode;
+	char ename[20];
+	int salary;
+public:
+	void egetdata()
+	{
+		cout<<"\nenter employee code ";
+		cin>>ecode;
+		cout<<"\nenter employee name ";
+		cin>>ename;
+		cout<<"\nenter salary of employee ";
+		cin>>salary;
+	}
+	void eshowdata()
+	{
+		cout<<"\nemployee code is "<<ecode;
+		cout<<"\nemployee name is "<<ename;
+		cout<<"\nsalary of employee is "<<salary;
+	}
+};
+class manager:protected employee
+{
+	char title[20];
+public:
+	void mgetdata()
+	{
+		egetdata();
+		cout<<"\nenter title of manager(senior/junior) ";
+		cin>>title;
+	}
+	void mshowdata()
+	{
+		eshowdata();
+		cout<<"\ntitle of manager is "<<title;
+	}
+};
+void main()
+{
+	manager ob;
+        clrscr();
+	ob.mgetdata(); //getdata function of manager class called here which in turns calls egetdata function of employee class
+	ob.mshowdata(); //showdata function of manager class called here which in turns calls eshowdata function of class employee
+	getch();
+}
+
+
+
+        </textarea>
+    </body>
+</html>

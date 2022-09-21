@@ -1,0 +1,34 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cstructures.html">Back To C++ Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure to demonstrate complex number with members (real and imaginary)
+#include<iostream.h>
+#include<conio.h>
+struct complex
+{
+	int real;
+	int imaginary;
+};
+void main()
+{
+	struct complex a;
+	printf("\nenter real part of complex number ");
+	scanf("%d",&a.real);
+	printf("\nenter imaginary part of complex number ");
+	scanf("%d",&a.imaginary);
+	printf("complex number is %d +i %d",a.real,a.imaginary);
+	getch();
+}
+
+   </textarea>
+    </body>
+</html>

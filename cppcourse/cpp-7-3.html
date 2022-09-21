@@ -1,0 +1,65 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp2darrays.html"> Back To C++ Double Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input two 2x2 matrices (double dimensional arrays) and check them for equality using for loop
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int a[2][2],b[2][2];
+	int i,j;
+	int equal=1;
+        clrscr();
+	cout<<"enter values for matrix 1 \n";
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			cout<<"enter element at ["<<i<<"]["<<j<<"]";
+			cin>>a[i][j];
+		}
+	}
+	cout<<"enter values for matrix 2 \n";
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			cout<<"enter element at ["<<i<<"]["<<j<<"]";
+			cin>>b[i][j];
+		}
+	}
+	cout<<"checking matrices for equality \n";
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			if(a[i][j]!=b[i][j])
+			{
+				equal=0;
+				break;
+			}
+		}
+	}
+	if(equal==1)
+	{
+		cout<<"\nmatrices are equal ";
+	}
+	else
+	{
+		cout<<"\nmatrices are not equal";
+	}
+	getch();
+}
+
+        </textarea>
+    </body>
+</html>

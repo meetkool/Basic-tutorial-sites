@@ -1,0 +1,32 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <a href="cbasics.html"> Back To C Basics Index</a>
+        <br>
+           <hr>
+        <textarea rows="40" cols="100">
+//program to create macros using #define directive
+#include<stdio.h>
+#include<conio.h>
+#define PI 3.14
+#define squarearea(a) a*a       //macro  to calculate area of square
+#define circlearea(r) PI*r*r
+#define sum(a,b,c) a+b+c
+void main()
+{
+    int a=10;
+    clrscr();
+    printf("%d",squarearea(a));
+    printf("\n");
+    printf("%f",circlearea(a));
+    printf("\n");
+    printf("%d",sum(a,a,a));
+    getch();
+}
+</textarea>
+    </body>
+</html>

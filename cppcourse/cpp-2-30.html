@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppflowofcontrol.html"> Back To C++ Flow of Control Index</a>
+        <br>
+        <br>
+        <hr>
+        
+        <textarea rows="40" cols="100">
+//program to input three numbers and print them in ascending order using if-else statement
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	float a,b,c,low,low2,low3;
+        clrscr();
+	cout<<"\nenter number 1";
+	cin>>a;
+	cout<<"\nenter number 2";
+	cin>>b;
+	cout<<"\nenter number 3";
+	cin>>c;
+	low=a;
+	if(b<low)
+	{
+		low=b;
+	}
+	if(c<low)
+	{
+		low=c;
+	}
+	if(a==low)
+	{
+		if(b<c)
+		{
+			low2=b;
+			low3=c;
+		}
+		else
+		{
+			low2=c;
+			low3=b;
+		}
+	}
+	else
+		if(b==low)
+		{
+			if(a<c)
+			{
+				low2=a;
+				low3=c;
+			}
+			else
+			{
+				low2=c;
+				low3=a;
+			}
+		}
+		else
+			if(c==low)
+			{
+				if(a<b)
+				{
+					low2=a;
+					low3=b;
+				}
+				else
+				{
+					low2=b;
+					low3=a;
+				}
+			}
+	cout<<low<<"\n"<<low2<<"\n"<<low3;
+        getch();
+}
+
+
+</textarea>
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cstructures.html">Back To C Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure student and calculate percentage based on marks (example of array within a structure)
+#include<stdio.h>
+#include<conio.h>
+struct student
+{
+    int rollno;
+    char name[20];
+    int marks[5];
+    float percentage;
+};
+void main()
+{
+    
+    struct student s;
+    float temp=0;
+    int i;
+    clrscr();
+    printf("\nenter rollno of student ");
+    scanf("%d",&s.rollno);
+    printf("\nenter name of student ");
+    scanf("%s",s.name);
+    for(i=0;i<5;i++)
+    {
+        printf("\nenter marks in subject %d : ",i+1);
+        scanf("%d",&s.marks[i]);
+        temp=temp+s.marks[i];
+    }
+    printf("\ndisplaying the data ");
+    printf("\nrollno of student is %d",s.rollno);
+    printf("\nname of student is %s",s.name);
+    for(i=0;i<5;i++)
+    {
+        printf("\nmarks of student in subject %d are %d ",i+1,s.marks[i]);
+    }
+    s.percentage=temp/5;
+    printf("\npercentage is %f",s.percentage);
+    getch();
+}
+   </textarea>
+    </body>
+</html>

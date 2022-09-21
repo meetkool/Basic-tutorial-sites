@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpploops.html"> Back To C++ Loops Index</a>
+     <hr>
+     <br>
+        <textarea rows="40" cols="100">
+//program to find lcm and hcf of 2 numbers using while loop
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+    int a,b,c;
+    cout<<"Enter two nos :";
+    cin>>a>>b;
+    c=a*b;
+    while(a!=b)
+    {
+        if(a>b)
+        a=a-b;
+        else
+        b=b-a;
+    }
+    cout<< "HCM \t= " <<a;
+    cout<< "LCM \t= " <<c/a;
+    getch();
+}
+</textarea>
+    </body>
+</html>

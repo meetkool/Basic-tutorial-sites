@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to pass integer arguments to function using call by reference method
+#include<iostream.h>
+#include<conio.h>
+void swap(int &a,int &b)   //example of call by reference
+{
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+    cout<<"\ndisplaying data in swap function ";
+    cout<<"\nvalue of a is "<<a;
+    cout<<"\nvalue of b is "<<b;
+}
+void main()
+{
+    clrscr();
+    int a,b;
+    cout<<"\nenter value for a ";
+    cin>>a;
+    cout<<"\nenter value for b ";
+    cin>>b;
+    cout<<"\ndisplaying data before calling swap \n";
+    cout<<"\nvalue of a is "<<a;
+    cout<<"\nvalue of b is "<<b;
+    swap(a,b);
+    cout<<"\ndisplaying data after calling swap \n";
+    cout<<"\nvalue of a is "<<a;
+    cout<<"\nvalue of b is "<<b;
+    getch();
+}

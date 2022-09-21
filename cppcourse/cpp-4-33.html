@@ -1,0 +1,43 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that returns sum of numbers between a and b passed to function as integer arguments
+#include<iostream.h>
+#include<conio.h>
+int sum(int,int);
+int sum(int a,int b)
+{
+	int i;
+	int s=0;
+	for(i=a;i<=b;i++)
+	{
+		s=s+i;
+	}
+	return s;
+}
+void main()
+{
+	int a,b;
+	int s;
+        clrscr();
+	cout<<"enter value for a ";
+	cin>>a;
+	cout<<"enter value for b ";
+	cin>>b;
+	s=sum(a,b);
+	cout<<"sum of numbers between a and b is "<<s;
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

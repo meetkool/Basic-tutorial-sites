@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cloops.html"> Back To C Loops Index</a>
+     
+     <hr>
+     <br>
+     <br>
+        <textarea rows="40" cols="100">
+//program to find factorial of number using for loop with decrement operator
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int fact=1;
+	int n,i;
+        clrscr();
+	printf("\nenter a number to find factorial of ");
+	scanf("%d",&n);
+	for(i=n;i>=1;i--)
+	{
+		fact=fact*i;
+	}
+	printf("\nfactorial of number is %d",fact);
+	getch();
+}
+
+</textarea>
+    </body>
+</html>

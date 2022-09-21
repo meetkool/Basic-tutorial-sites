@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppflowofcontrol.html"> Back To C++ Flow of Control Index</a>
+        <br>
+        <br>
+        <hr>
+        
+        <textarea rows="40" cols="100">
+//program to input a year and find whether it is a leap year or not using if-else statement
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+    clrscr();
+    int year;
+    cout<<"\nenter year ";
+    cin>>year;
+    if((year%100==0) || (year%400==0))
+    {
+        cout<<"\nleap year\n";
+    }
+    else
+    {
+        if(year%4==0)
+        {
+            cout<<"\nleap year\n";
+        }
+        else
+        {
+            cout<<"\nnot a leap year";
+        }
+    }
+    getch();
+}
+
+
+</textarea>
+</body>
+</html>

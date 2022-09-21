@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpploops.html"> Back To C++ Loops Index</a>
+     <hr>program to find sum of series (1<sup>1</sup>/1! + 2<sup>2</sup>/2! + 3<sup>3</sup>/3! + .... n
+     
+     <hr>
+     <br>
+     <br>
+        <textarea rows="40" cols="100">
+//program to find sum of series 
+#include<iostream.h>
+#include<conio.h>
+double fact(double a)
+{
+    double f=1;
+    int i;
+    for(i=1;i<=a;i++)
+    {
+        f=f*i;
+    }
+    return f;
+}
+double pow(double a,double b)
+{
+    double result=1;
+    int i;
+    for(i=1;i<=b;i++)
+    {
+        result=result*a;
+    }
+    return result;
+}
+void main()
+{
+    clrscr();
+    int i;
+    int n;
+    double sum=0;
+    double result=0;
+    cout<<"\nenter value for n ";
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        result=pow(i,i)/(fact(i));
+        sum=sum+result;
+    }
+    cout<<"\nsum of series is "<<sum;
+    getch();
+}
+</textarea>
+    </body>
+</html>

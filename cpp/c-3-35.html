@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cloops.html"> Back To C Loops Index</a>
+     <hr>
+     <br>
+     continue statement results in termination of running iteration
+      <hr>
+     <br>
+        <textarea rows="40" cols="100">
+//program to input a number and find sum of digits of the number
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    
+    int num,digit,rev=0;
+    int sum=0;
+    clrscr();
+    printf("\nenter the number");
+    scanf("%d",&num);
+    do
+    {
+        digit=num%10;
+        sum=sum+digit;
+        num=num/10;
+    }while(num!=0);
+    printf("\nthe sum of numbers is %d",sum);
+    getch();
+}
+</textarea>
+    </body>
+</html>

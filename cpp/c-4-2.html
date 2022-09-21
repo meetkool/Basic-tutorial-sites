@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cuserdefined.html"> Back To C User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that checks whether a number is even or odd (number is passed to function as argument)
+#include<stdio.h>
+#include<conio.h>
+void evenodd(int); //function declaration
+void evenodd(int a) //function definition
+{
+	if(a%2==0)
+	{
+		printf("number is even\n");
+	}
+	else
+	{
+		printf("number is odd\n");
+	}
+}
+void main()
+{
+        clrscr();
+	evenodd(10); //calling or invoking the function
+	evenodd(15);
+	getch();
+}
+
+
+        </textarea>
+    </body>
+</html>

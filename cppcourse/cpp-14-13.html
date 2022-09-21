@@ -1,0 +1,60 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppinheritance.html"> Back To C++ Inheritance  Index</a>
+        
+       
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to call or invoke constructor of base class in derived class
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+class box
+{
+    int width;
+    int depth;
+    int height;
+    public:
+    box(int w,int d,int h)
+    {
+	width=w;
+	depth=d;
+	height=h;
+    }
+    void bshowdata()
+    {
+        cout<<"\nwidth of box is "<<width;
+        cout<<"\ndepth of box is "<<depth;
+        cout<<"\nheight of box is "<<height;
+    }
+};
+class colourbox : public box
+{
+    char colour[20];
+    public:
+    colourbox(char n[20],int w,int d,int h):box(w,d,h)
+    {
+	strcpy(colour,n);
+    }
+    void cshowdata()
+    {
+        bshowdata();
+        cout<<"\ncolour of box is "<<colour;
+    }
+};
+void main()
+{
+    clrscr();
+    colourbox ob("red",10,20,30);
+    ob.cshowdata();
+    getch();
+}
+    </textarea>
+    </body>
+</html>

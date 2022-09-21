@@ -1,0 +1,53 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create two functions to calculate area and circumference of circle and call them based on user choice using switch statement
+#include<iostream.h>
+#include<conio.h>
+void area(int);
+void circumference(int);
+void area(int radius)
+{
+	float ar;
+	ar=3.14*radius*radius;
+	cout<<"area of circle is "<<ar;
+}
+void circumference(int radius)
+{
+	float cir;
+	cir=2*3.14*radius;
+	cout<<"circumference of circle is "<<cir;
+}
+void main()
+{
+	int r;
+	int ch;
+        clrscr();
+	cout<<"enter radius of circle";
+	cin>>r;
+	cout<<"enter your choice (1 for area and 2 for circumference";
+	cin>>ch;
+	switch(ch)
+	{
+		case 1:area(r);
+		break;
+		case 2:circumference(r);
+		break;
+		default:cout<<"enter 1 or 2 as choice";
+	}
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+body {
+	font-family: Ubuntu, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+ol {
+    padding: 20px;
+    font-size: 20px;
+}
+
+li {
+    padding: 0;
+	margin: 0;  
+}
+
+h1, h4 { 
+    font-family: 'Sanchez', serif;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 { 
+    font-family: 'Baloo', cursive;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.content-cont {
+	padding-top: 30px;
+	padding-right: 70px;
+	padding-left: 70px;
+    padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 100%;
+	line-height: 30pt;
+}
+
+ul.content-trail {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #D4D4D4;
+    text-align: center;
+    font-weight: bold;
+}
+
+ul.content-trail li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.content-trail li+li:before {
+    padding: 8px;
+    color: #73BB32;
+    content: ">\00a0";
+}
+
+ul.content-trail li a {
+    color: #151515;
+    text-decoration: none;
+}
+
+ul.content-trail li a:hover {
+    color: white;
+}
+/* Begins Footer Style */
+#page-footer {
+	background-color: #151515;
+    color: #73BB32;
+    text-align: center;
+    bottom: 0;
+}
+/* Ends Footer Style */
+@media screen and (max-width: 822px) {
+
+    .home-content p { 
+        font-size: 16px;
+        margin: auto;
+    }
+    
+    #home-light div, #home-backpic div {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+    
+    .content-cont {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        text-align: center;
+        text-indent: 0px;
+    }
+    
+    h1, h3 {
+        font-size: 23px;
+    }
+    
+    h2 {
+        font-size: 29px;
+    }
+    
+}
+
+@media screen and (max-width: 822px) {
+    
+    ul.content-trail li {
+        font-size: 14px;
+    }
+    
+    ul.content-trail {
+        padding: 8px 13px;
+    }
+    
+    ul.content-trail li+li:before {
+        padding: 4px;
+    }
+}
+
+@media screen and (max-width: 521px) {
+    
+    ul.content-trail li {
+        font-size: 13px;
+    }
+    
+    ul.content-trail li+li:before {
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    
+    ul.content-trail li {
+        font-size: 11px;
+    }
+    
+}

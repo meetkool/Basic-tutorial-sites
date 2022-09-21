@@ -1,0 +1,54 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create two functions to calculate area and perimeter of rectangle and call them based on user choice using switch statement
+#include<iostream.h>
+#include<conio.h>
+void area(int,int);
+void perimeter(int,int);
+void area(int length,int breadth)
+{
+	int area;
+	area=length*breadth;
+	cout<<"are aof rectangle is "<<area;
+}
+void perimeter(int length,int breadth)
+{
+	int perimeter;
+	perimeter=2*(length+breadth);
+	cout<<"perimeter of rectangle is "<<perimeter;
+}
+void main()
+{
+	int ch;
+	int l,b;
+        clrscr();
+	cout<<"enter length of rectangle";
+	cin>>l;
+	cout<<"enter breadth of rectangle";
+	cin>>b;
+	cout<<"enter your choice 1 for area or 2 for perimeter";
+	cin>>ch;
+	switch(ch)
+	{
+	case 1: area(l,b);
+		break;
+	case 2: perimeter(l,b);
+		break;
+	default:cout<<"enter a valid choice 1 for area or 2 for perimeter";
+	}
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

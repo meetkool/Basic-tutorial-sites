@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cloops.html"> Back To C++ Loops Index</a>
+     <hr>
+     <br>
+        <textarea rows="40" cols="100">
+//program to find lcm and hcf of 2 numbers using while loop
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a,b,c;
+    printf("Enter number 1 :");
+    scanf("%d",&a);
+    printf("Enter number 2 :");
+    scanf("%d",&b);
+    c=a*b;
+    while(a!=b)
+    {
+        if(a>b)
+        a=a-b;
+        else
+        b=b-a;
+    }
+    printf("HCF \t= %d",a);
+    printf("LCM \t= %d",c/a);
+    getch();
+}
+</textarea>
+    </body>
+</html>

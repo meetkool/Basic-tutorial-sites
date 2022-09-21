@@ -1,0 +1,55 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input array of 10 integer elements and find prime numbers from the array (example of arrays and functions )
+#include<iostream.h>
+#include<conio.h>
+void isprime(int a)
+{
+	int i;
+	int prime=1;
+	for(i=2;i<=a/2;i++)
+	{
+		if(a%i==0)
+		{
+			prime=0;
+			break;
+		}
+	}
+	if(prime==1)
+	{
+		cout<<"\n"<<a<<" is prime ";
+	}
+	else
+	{
+		cout<<"\n"<<a<<" is not prime ";
+	}
+}
+void main()
+{
+	int a[10];
+	int i;
+        clrscr();
+	for(i=0;i<10;i++)
+	{
+		cout<<"\nenter element at position "<<i<<" : ";
+		cin>>a[i];
+	}
+	for(i=0;i<10;i++)
+	{
+		isprime(a[i]);
+	}
+	getch();
+}
+ </textarea>
+    </body>
+</html>

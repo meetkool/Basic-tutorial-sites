@@ -1,0 +1,66 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp2darrays.html"> Back To C++ Double Dimensional Arrays Index</a>
+
+        <br><br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to initialize a 3x3 matrix and find sum of elements in rows and sum of elements in columns
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+    clrscr();
+    int a[3][3]={
+	1,1,1,
+	2,2,2,
+	3,3,3
+	};
+    int i,j;
+    int rowsum[3]={0,0,0};
+    int colsum[3]={0,0,0};
+    cout<<"\ndisplaying the matrix \n";
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            cout<<a[i][j]<<"\t";
+        }
+        cout<<"\n";
+    }
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            rowsum[i]=rowsum[i]+a[i][j];
+        }
+    }
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            colsum[i]=colsum[i]+a[j][i];
+        }
+    }
+    cout<<"\ndisplaying the column sum \n";
+    for(i=0;i<3;i++)
+    {
+	cout<<"sum of column "<<i+1<<" : "<<colsum[i]<<"\n";
+    }
+
+    cout<<"\ndisplaying the row sum \n";
+    for(i=0;i<3;i++)
+    {
+	cout<<"sum of row "<<i+1<<" : "<<rowsum[i]<<"\n";
+    }
+    getch();
+}
+
+        </textarea>
+    </body>
+</html>

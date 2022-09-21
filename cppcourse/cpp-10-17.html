@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppstructures.html">Back To C++ Structures</a>
+        <br>
+        <hr>
+        nested structure means structure within a structure
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure complex number with members(real and imaginary), creates two structure variables and passes these variables to function which calculates sum of two complex number structure variables into a new structure variable and returns the variable
+#include<iostream.h>
+#include<conio.h>
+struct complex
+{
+	int real;
+	int imaginary;
+};
+complex add(complex a,complex b)
+{
+    complex c;
+    c.real=a.real+b.real;
+    c.imaginary=a.imaginary+b.imaginary;
+    return c;
+}
+void main()
+{
+	complex a,b,sum;
+	clrscr();
+	cout<<"\nenter real part of complex number 1 : ";
+	cin>>a.real;
+	cout<<"\nenter imaginary part of complex number 1 :";
+	cin>>a.imaginary;
+	cout<<"complex number 1 is "<<a.real<<" +i"<<a.imaginary;
+	cout<<"\nenter real part of complex number 2 : ";
+	cin>>b.real;
+	cout<<"\nenter imaginary part of complex number 2 : ";
+	cin>>b.imaginary;
+	cout<<"complex number 2 is "<<b.real<<" +i"<<b.imaginary;
+	sum=add(a,b);
+	cout<<"\ndisplaying the resultant complex variable\n";
+	cout<<"complex number after addition is "<<sum.real<<" +i"<<sum.imaginary;
+	getch();
+}
+
+   </textarea>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppflowofcontrol.html"> Back To C++ Flow of Control Index</a>
+        <br>
+        <br>
+        <hr>     
+        if marks are between 80 and 100, grade is computed as 'a'
+        <br>
+        if marks are between 70 and 79, grade is computed as 'b'
+        <br>
+        if marks are between 60 and 69, grade is computed as 'c'
+        <br>
+        if marks are between 0 and 59, grade is computed as 'd'
+        <hr>
+        <textarea rows="40" cols="100">
+//program to compute grade of a student based on marks using if else statement
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int marks;
+	char grade;
+        clrscr();
+	cout<<"enter marks";
+	cin>>marks;
+	if((marks>=80) &&(marks<=100))
+	{
+		grade='a';
+	}
+	else if((marks>=70) && (marks<80))
+	{
+		grade='b';
+	}
+	else if((marks>=60) && (marks<70))
+	{
+		grade='c';
+	}
+	else
+	{
+		grade='d';
+	}
+	cout<<"grade obtained by the student is "<<grade;
+	getch();
+}
+</textarea>
+    </body>
+</html>

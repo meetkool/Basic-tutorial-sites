@@ -1,0 +1,46 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input array of 10 integer elements and find sum of even and odd numbers using for loop
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int a[10];
+	int i;
+	int sumeven=0,sumodd=0;
+        clrscr();
+	for(i=0;i<10;i++)
+	{
+		cout<<"\nenter element at position "<<i<<" : ";
+		cin>>a[i];
+	}
+	for(i=0;i<10;i++)
+	{
+		if(a[i]%2==0)
+		{
+			sumeven=sumeven+a[i];
+		}
+		else
+		{
+			sumodd=sumodd+a[i];
+		}
+	}
+	cout<<"\nsum of even numbers is "<<sumeven;
+	cout<<"\nsum of odd numbers is "<<sumodd;
+	getch();
+}
+
+
+        </textarea>
+    </body>
+</html>

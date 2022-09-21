@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="c1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input a string(char array) and check whether the string is palindrome or not (radar is a palindrome and radaw is not a palindrome)
+#include<conio.h>
+#include<string.h>
+#include<stdio.h>
+void main()
+{
+    char str1[10];
+    int i,l;
+    int palin=1;
+    clrscr();
+    printf("\nenter string 1");
+    gets(str1);
+    l=strlen(str1);
+    for(i=0;i<=l/2;i++)
+    {
+        if(str1[i]!=str1[l-i-1])
+        {
+            palin=0;
+            break;
+        }
+    }
+    if(palin==0)
+    {
+        printf("\nstring is not palindrome");
+    }
+    else
+    {
+        printf("\nstring is palindrome ");
+    }
+    getch();
+}
+
+        </textarea>
+    </body>
+</html>

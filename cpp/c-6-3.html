@@ -1,0 +1,45 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cstructures.html">Back To C Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure employee with members (ecode,ename,salary and designation) and input values from user and then display the values
+#include<stdio.h>
+#include<conio.h>
+struct employee
+{
+	int ecode;
+	char ename[20];
+	float salary;
+	char designation[20];
+};
+void main()
+{
+	struct employee emp;
+        clrscr();
+	printf("enter ecode of employee ");
+	scanf("%d",&emp.ecode);
+	printf("enter name of employee ");
+	scanf("%s",emp.ename);
+	printf("enter salary of employee");
+	scanf("%f",&emp.salary);
+	printf("enter designation of employee");
+	scanf("%s",emp.designation);
+	printf("\ndisplaying the values \n");
+	printf("\necode of employee is %d",emp.ecode);
+	printf("\nname of employee is %s",emp.ename);
+	printf("\nsalary of employee is %f",emp.salary);
+	printf("\ndesignation of employee is %s",emp.designation);
+        getch();
+}
+
+    </textarea>
+    </body>
+</html>

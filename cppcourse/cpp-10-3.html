@@ -1,0 +1,45 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppstructures.html">Back To C++ Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure employee with members (ecode,ename,salary and designation) and input values from user and then display the values
+#include<iostream.h>
+#include<conio.h>
+struct employee
+{
+	int ecode;
+	char ename[20];
+	float salary;
+	char designation[20];
+};
+void main()
+{
+	employee emp;
+        clrscr();
+	cout<<"enter ecode of employee ";
+	cin>>emp.ecode;
+	cout<<"enter name of employee ";
+	cin>>emp.ename;
+	cout<<"enter salary of employee";
+	cin>>emp.salary;
+	cout<<"enter designation of employee";
+	cin>>emp.designation;
+	cout<<"\ndisplaying the values \n";
+	cout<<"\necode of employee is "<<emp.ecode;
+	cout<<"\nname of employee is "<<emp.ename;
+	cout<<"\nsalary of employee is "<<emp.salary;
+	cout<<"\ndesignation of employee is "<<emp.designation;
+        getch();
+}
+
+    </textarea>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppconstructors.html">Back To C++ Constructors & Destructors</a>
+        <br>
+        <hr>
+        constructor is a special member function that has the same name as that of class and is used to initialize the datamembers of the class
+        <br>
+      
+                <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate example of class student that contains two public member functions getdata() and showdata() and four data members (rollno,name,clas and marks)program to demonstrate example of class bankaccount with data members ( account_no,name,type,balance) and contains member functions (deposit,withdraw and showdata), class also contains a default constructor
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+class account
+{
+	int account_no;
+	char name[20];
+	char type;
+	int balance;
+public:
+	account()
+	{
+		account_no=1001;
+		strcpy(name,"abcdef");
+		type='s';
+		balance=1000;
+	}
+	void deposit(int amount)
+	{
+		balance=balance+amount;
+		cout<<"\n"<<amount<<" deposited in account no "<<account_no;
+	}
+	void withdraw(int amount)
+	{
+		if(balance>=1000)
+		{
+			balance=balance=amount;
+			cout<<"\n"<<amount<<" withdrawn from account no "<<account_no;
+		}
+		else
+		{
+			cout<<"\namount can't be withdrawn (balance in account is less than 1000 ";
+		}
+	}
+	void showdata()
+	{
+		cout<<"\naccount no is "<<account_no;
+		cout<<"\nname of account is "<<name;
+		if(type=='s')
+		{
+			cout<<"\ntype of account is savings";
+		}
+		else
+		{
+			cout<<"\ntype of account is current";
+		}
+		cout<<"\nbalance in the account is "<<balance;
+	}
+};
+void main()
+{
+	account ob;
+        clrscr();
+	ob.showdata();
+	ob.deposit(3000);
+	ob.withdraw(2000);
+	ob.showdata();
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

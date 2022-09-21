@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="c1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to convert a string to upper case without using strupr function
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    
+    char str[10];
+    int i;
+    clrscr();
+    printf("\nenter a string ");
+    gets(str);
+    printf("\noriginal string is %s",str);
+    for(i=0;str[i]!='\0';i++)
+    {
+        if((str[i]>='a') && (str[i]<='z'))
+        {
+            str[i]=str[i]-32;
+        }
+    }
+    printf("\nconverted string is %s",str);
+    getch();
+}
+
+
+        </textarea>
+    </body>
+</html>

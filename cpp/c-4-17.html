@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that finds volume of a box (width, depth and height of box are passed to function as arguments)
+#include<stdio.h>
+#include<conio.h>
+void volume(int,int,int);
+void volume(int width,int depth,int height)
+{
+	int vol;
+	vol=width*depth*height;
+	printf("volume of box is %d",vol);
+}
+void main()
+{
+	int w,d,h;
+        clrscr();
+	printf("enter width of box ");
+	scanf("%d",&w);
+	printf("enter depth of box");
+	scanf("%d",&d);
+	printf("enter height of box");
+	scanf("%d",&h);
+	volume(w,d,h);
+	getch();
+}
+    </textarea>
+    </body>
+</html>

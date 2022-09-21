@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cuserdefined.html"> Back To C User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that display hello world for a specified number of times
+#include<stdio.h>
+#include<conio.h>
+void display(int);
+void display(int n)
+{
+	int i;
+	for(i=1;i<=n;i++)
+	{
+		printf("hello world\n");
+	}
+}
+void main()
+{
+	int n;
+        clrscr();
+	printf("enter the number of times you want to display message hello world");
+	scanf("%d",&n);
+	display(n);
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

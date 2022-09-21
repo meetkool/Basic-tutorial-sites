@@ -1,0 +1,44 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cstructures.html">Back To C Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure distance with members (feet and inches), two structure variables are created
+#include<stdio.h>
+#include<conio.h>
+struct distance
+{
+    int feet;
+    int inches;
+};
+void main()
+{
+   
+    struct distance a,b;
+    clrscr();
+    printf("\nenter data for distance a ");
+    printf("\nenter feet ");
+    scanf("%d",&a.feet);
+    printf("\nenter inches ");
+    scanf("%d",&a.inches);
+    printf("\nenter data for distance b ");
+    printf("\nenter feet ");
+    scanf("%d",&b.feet);
+    printf("\nenter inches ");
+    scanf("%d",&b.inches);
+    printf("\ndisplaying the values of distance a\n");
+    printf("\nfeet = %d , inches = %d",a.feet,a.inches);
+    printf("\ndisplaying the values of distance b\n");
+    printf("\nfeet = %d , inches = %d ",b.feet,b.inches);
+    getch();
+}
+   </textarea>
+    </body>
+</html>

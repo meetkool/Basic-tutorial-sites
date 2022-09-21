@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that returns area of circle based on radius passed to function as argument
+#include<iostream.h>
+#include<conio.h>
+float area(int);
+float area(int radius)
+{
+	float ar;
+	ar=3.14*radius*radius;
+	return ar;
+}
+void main()
+{
+	int r;
+	float ar;
+        clrscr();
+	cout<<"enter the radius of the circle";
+	cin>>r;
+	ar=area(r);
+	cout<<"area of circle is "<<ar;
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

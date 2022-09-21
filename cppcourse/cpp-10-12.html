@@ -1,0 +1,64 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppstructures.html">Back To C++ Structures</a>
+        <br>
+        <hr>
+        nested structure means structure within a structure
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure employee with members (ecode, designation and two nested structures ename and salary ) structure ename has members (firstname and lastname) structure salary has members (basic,da,hra)(example of nested structures)
+#include<iostream.h>
+#include<conio.h>
+struct salary
+{
+	int basic;
+	int da;
+	int hra;
+};
+struct ename
+{
+	char firstname[20];
+	char lastname[20];
+};
+struct employee
+{
+	int ecode;
+	ename name;
+	salary sal;
+	char designation[20];
+};
+void main()
+{
+	employee emp;
+        clrscr();
+	cout<<"\nenter ecode of employee ";
+	cin>>emp.ecode;
+	cout<<"\nenter firstname of the employee ";
+	cin>>emp.name.firstname;
+	cout<<"\nenter lastname of employee ";
+	cin>>emp.name.lastname;
+	cout<<"enter basic salary of employee";
+	cin>>emp.sal.basic;
+	cout<<"\nenter dearness allowance ";
+	cin>>emp.sal.da;
+	cout<<"\nenter house rent allowance ";
+	cin>>emp.sal.hra;
+	cout<<"\nenter designation of employee ";
+	cin>>emp.designation;
+	cout<<"\nDisplaying the values \n";
+	cout<<"\necode of employee is "<<emp.ecode;
+	cout<<"\nname of employee is "<<emp.name.firstname<<","<<emp.name.lastname;
+	cout<<"\ntotal salary of employee is "<<emp.sal.basic + emp.sal.da + emp.sal.hra;
+	cout<<"\ndesignation of employee is "<<emp.designation;
+	getch();
+}
+
+   </textarea>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input a char array (string) and reverse the string without using strrev function
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    clrscr();
+    char str1[10];
+    int i,l;
+    cout<<"\nenter a string";
+    gets(str1);
+    l=strlen(str1);
+    char temp;
+    for(i=0;i<l/2;i++)
+    {
+        temp=str1[l-i-1];
+        str1[l-i-1]=str1[i];
+        str1[i]=temp;
+    }
+    cout<<"\nconverted string is "<<str1;
+    getch();
+}
+        </textarea>
+    </body>
+</html>

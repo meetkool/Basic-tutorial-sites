@@ -1,0 +1,47 @@
+<html>
+    <head>
+<html>
+<head>
+<script type="text/javascript">
+function loadXMLDoc(filename)
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("text1").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET",filename,true);
+xmlhttp.send();
+}
+</script>
+</head>
+<body>
+
+        <h4>C++ Basics Programs</h4>
+       
+        <table>
+            <tr><td>
+                      1. program to display hello world on the output screen - <INPUT TYPE="button" VALUE="Code" onclick="loadXMLDoc('page1.txt')" >
+                </td></tr>
+  <tr><td>
+                     2. program to display abcdefxyz on the output screen -<INPUT TYPE="button" VALUE="Code" onclick="loadXMLDoc('page2.txt')" >
+                </td></tr>
+   <tr><td>
+                     3. program to input an integer (or number) and display its value - <INPUT TYPE="button" VALUE="Code" onclick="loadXMLDoc('page3.txt')" >
+                </td></tr>
+        </table>
+     <div id="myDiv"><h2>Let AJAX change this text</h2></div>
+<textarea rows=50 cols=20 id="text1"></textarea>
+    </body>
+</html>

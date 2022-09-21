@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cflowofcontrol.html"> Back To C Flow of Control Index</a>
+        <br>
+        <br>
+        <hr>     
+        month is taken as input in number
+        <br>
+        if month is entered as 1 , month is displayed as january
+        <br>
+        if month is entered as 2 , month is displayed as february
+          <br>
+        if month is entered as 3 , month is displayed as march
+        
+        <br>
+        if month is entered as 4 , month is displayed as april
+        
+        <br>
+        if month is entered as 5 , month is displayed as may
+        
+        <br>
+        if month is entered as 6 , month is displayed as june
+        
+        <br>
+        if month is entered as 7 , month is displayed as july
+        <br>
+        if month is entered as 8 , month is displayed as august
+          <br>
+        if month is entered as 9 , month is displayed as september
+        
+        <br>
+        if month is entered as 10 , month is displayed as october
+        
+        <br>
+        if month is entered as 11 , month is displayed as november
+        
+        <br>
+        if month is entered as 12 , month is displayed as december
+        
+        <br>
+        if month is entered as 7 , month is displayed as sunmonth
+       
+        <br>
+        if month is entered other than 1,2,3,4,,5,6,7,8,9,10,11,12 , message is displayed as <b>enter a month between 1 and 12</b>
+        
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate switch-case example 2,displaying month of the year
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int month;
+        clrscr();
+	printf("enter month in number (1-12)");
+	scanf("%d",&month);
+	switch(month)
+	{
+	case 1:
+		printf("january");
+		break;
+	case 2:
+		printf("february");
+		break;
+	case 3:
+		printf("march");
+		break;
+	case 4:
+		printf("april");
+		break;
+	case 5:
+		printf("may");
+		break;
+	case 6:
+		printf("june");
+		break;
+	case 7:
+		printf("july");
+		break;
+	case 8:
+		printf("august");
+		break;
+	case 9:
+		printf("september");
+		break;
+	case 10:
+		printf("october");
+		break;
+	case 11:
+		printf("november");
+		break;
+	case 12:
+		printf("december");
+		break;
+	default:
+		printf("enter a month between 1 and 12");
+	}
+	getch();
+}
+
+</textarea>
+    </body>
+</html>

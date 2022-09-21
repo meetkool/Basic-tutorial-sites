@@ -1,0 +1,34 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cstructures.html">Back To C Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure student with members rollno,name and marks. structure variable is initialized with values (1,abcdef,90)
+#include<stdio.h>
+#include<conio.h>
+struct student
+{
+    int rollno;
+    char name[20];
+    int marks;
+ };
+void main()
+{
+    
+    struct student s={1,"abcdef",90};
+    clrscr();
+    printf("\nrollno is %d",s.rollno);
+    printf("\nname is %s",s.name);
+    printf("\nmarks are %d",s.marks);
+    getch();
+}
+    </textarea>
+    </body>
+</html>

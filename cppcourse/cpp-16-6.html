@@ -1,0 +1,43 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppsortsearch.html"> Back To C++ Basic  Index</a>
+        <br>
+       
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate selection sort on a single dimensional array
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int a[5]={4,2,1,3,5};
+	int i,j,temp;
+        clrscr();
+	for(i=0;i<5;i++)
+	{
+		for(j=i;j<5;j++)
+		{
+			if(a[i]>a[j])
+			{
+				temp=a[j];
+				a[j]=a[i];
+				a[i]=temp;
+			}
+		}
+	}
+	for(i=0;i<5;i++)
+	{
+		cout<<a[i]<<"\n";
+	}
+	getch();
+}
+
+
+        </textarea>
+    </body>
+</html>

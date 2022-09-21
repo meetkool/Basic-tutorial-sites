@@ -1,0 +1,91 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppinheritance.html"> Back To C++ Inheritance  Index</a>
+        
+       
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate multiple inheritance, class fourth is derived from three base classes (first,second and third) in public access mode
+#include<iostream.h>
+#include<conio.h>
+class first
+{
+    int a;
+    public:
+    void firstgetdata()
+    {
+        cout<<"\nenter value for a ";
+        cin>>a;
+    }
+    void firstshowdata()
+    {
+        cout<<"value of a is "<<a;
+    }
+};
+class second
+{
+    int b;
+    public:
+    void secondgetdata()
+    {
+        cout<<"\nenter value for b ";
+        cin>>b;
+    }
+    void secondshowdata()
+    {
+        cout<<"\nvalue of b is "<<b;
+    }
+};
+class third
+{
+    int c;
+    public:
+    void thirdgetdata()
+    {
+        cout<<"\nenter value for c ";
+        cin>>c;
+    }
+    void thirdshowdata()
+    {
+        cout<<"\nvalue of c is "<<c;
+    }
+};
+class fourth:public first,second,third
+{
+    int d;
+    public:
+    void getdata()
+    {
+        firstgetdata();
+        secondgetdata();
+        thirdgetdata();
+        cout<<"\nenter value for d ";
+        cin>>d;
+    }
+    void showdata()
+    {
+        firstshowdata();
+        secondshowdata();
+        thirdshowdata();
+        cout<<"\nvalue of d is "<<d;
+    }
+};
+void main()
+{
+    clrscr();
+    fourth ob;
+    ob.getdata();
+    ob.showdata();
+    getch();
+}
+
+
+        </textarea>
+    </body>
+</html>

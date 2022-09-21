@@ -1,0 +1,50 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppconstructors.html">Back To C++ Constructors & Destructors</a>
+        <br>
+        <br>
+      
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate parameterized constructor in class employee
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+class employee
+{
+	int ecode;
+	char ename[20];
+	int esalary;
+	char edesignation[20];
+public:
+	employee(int code,char name[20],int salary,char designation[20])
+	{
+		ecode=code;
+		strcpy(ename,name);
+		esalary=salary;
+		strcpy(edesignation,designation);
+	}
+	void showdata()
+	{
+		cout<<"\nemployee code is "<<ecode;
+		cout<<"\nemployee name is "<<ename;
+		cout<<"\nemployee salary is "<<esalary;
+		cout<<"\nemployee designation is "<<edesignation;
+	}
+};
+void main()
+{
+	employee ob(1,"abcdef",10000,"xyxyx");
+        clrscr();
+	ob.showdata();
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input a sentence and count number of words in it using for loop 
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+#include<stdio.h>
+void main()
+{
+	char str[100];
+	int count=0;
+	int l,i;
+	clrscr();
+	cout<<"\nenter a string : ";
+	gets(str);
+	l=strlen(str);
+	cout<<"\nstring you have entered is : "<<str;
+	for(i=0;i<l;i++)
+	{
+            if(str[i]==' ')
+            {
+                count++;
+            }
+	}
+	cout<<"\nnumber of words are "<<count+1;
+	getch();
+}
+
+ </textarea>
+    </body>
+</html>

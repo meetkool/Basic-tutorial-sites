@@ -1,0 +1,44 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <form>
+            <textarea>#include<iostream.h>
+#include<conio.h>
+void main()
+{
+int choice;
+double temp,conv;
+clrscr();
+cout<<"\n1. fahrenheit to celsius";
+cout<<"\n2. celsius to fahrenheit";
+cout<<"\nenter your choice 1,2";
+cin>>choice;
+if(choice==1)
+{
+cout<<"\nenter temperature in fahrenheit";
+cin>>temp;
+conv=(temp-32)/1.8;
+cout<<"\ntemperature in celsius is "<<conv;
+}
+else
+{
+cout<<"\nEnter temperature in celsius ";
+cin>>temp;
+conv=(1.8*temp)+32;
+cout<<"\ntemperature in fahrenheit is "<<conv;
+}
+getch();
+}
+    </textarea>
+            
+        </form>
+    </body>
+</html>

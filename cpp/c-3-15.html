@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cloops.html"> Back To C Loops Index</a>
+     <hr>
+     <br>
+        <textarea rows="40" cols="100">
+//program to find whether number entered is prime or not using for statement
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i;
+	int a;
+	int prime=1;
+        clrscr();
+	printf("enter value for a");
+	scanf("%d",&a);
+	for(i=2;i<=a/2;i++)
+	{
+		if(a%i==0)
+		{
+			prime=0;
+			break;
+		}
+	}
+	if(prime==1)
+	{
+		printf("number entered is prime ");
+	}
+	else
+	{
+		printf("number entered is not prime");
+	}
+	getch();
+}
+
+</textarea>
+    </body>
+</html>

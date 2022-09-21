@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input an integer array of marks in 5 subjects and calculate percentage
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int marks[5];
+	int i,total=0;
+	float percentage;
+	for(i=0;i<5;i++)
+	{
+		cout<<"\nenter marks in subject "<<i+1;
+		cin>>marks[i];
+		total=total+marks[i];
+
+	}
+	cout<<"total number of marks in five subjects are "<<total;
+	percentage=total/5;
+	cout<<"\npercentage of student is "<<percentage;
+	getch();
+}
+
+
+        </textarea>
+    </body>
+</html>

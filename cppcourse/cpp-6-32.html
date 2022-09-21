@@ -1,0 +1,44 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input a sentence (char array) and remove multiple spaces with a single space
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+	char a[50]="hello    how    do  u  do";
+	char b[50];
+	int l,i=0,j=0;
+	l=strlen(a);
+	while(i<l)
+	{
+		if((a[i]==' ') && (a[i+1]==' '))
+		{
+			i++;
+		}
+		else
+		{
+			b[j]=a[i];
+			j++;
+			i++;
+		}
+	}
+	b[j]='\0';
+	cout<<"\nstring after replacing multiple spaces with a single space is "<<b;
+	getch();
+}
+
+
+ </textarea>
+    </body>
+</html>

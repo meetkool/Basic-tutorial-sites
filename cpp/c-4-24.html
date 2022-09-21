@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cuserdefined.html"> Back To C User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function to calculate simple interest based on principal amount,rate of interest and time (principal,rate and time are passed to functions as arguments, principal and rate are passed as float arguments , time is passed as integer argument )
+#include<stdio.h>
+#include<conio.h>
+void calsi(float,float,int);
+void calcsi(float principal,float rate,int time)
+{
+	float si;
+	si=(principal*rate*time)/100;
+	printf("simple interest is %f",si);
+}
+void main()
+{
+	float p;
+	float r;
+	int t;
+        clrscr();
+	printf("enter principal amount ");
+	scanf("%f",&p);
+	printf("enter rate of interest");
+	scanf("%f",&r);
+	printf("enter time in years");
+	scanf("%d",&t);
+	calcsi(p,r,t);
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

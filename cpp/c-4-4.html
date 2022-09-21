@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cuserdefined.html"> Back To C User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function to find factorial of number passed to function as argument
+#include<stdio.h>
+#include<conio.h>
+void factorial(int); //function declaration
+void factorial(int a) //function definition
+{
+	int fact=1;
+	int i;
+	for(i=1;i<=a;i++)
+	{
+		fact=fact*i;
+	}
+	printf("factorial of number is %d",fact);
+}
+void main()
+{
+	int a;
+        clrscr();
+	printf("enter number to find factorial for ");
+	scanf("%d",&a);
+	factorial(a); //calling the function
+	getch();
+}
+
+        </textarea>
+    </body>
+</html>

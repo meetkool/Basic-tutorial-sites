@@ -1,0 +1,43 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppstructures.html">Back To C++ Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure distance with members (feet and inches), two structure variables are created
+#include<iostream.h>
+#include<conio.h>
+struct distance
+{
+    int feet;
+    int inches;
+};
+void main()
+{
+    clrscr();
+    distance a,b;
+    cout<<"\nenter data for distance a ";
+    cout<<"\nenter feet ";
+    cin>>a.feet;
+    cout<<"\nenter inches ";
+    cin>>a.inches;
+    cout<<"\nenter data for distance b ";
+    cout<<"\nenter feet ";
+    cin>>b.feet;
+    cout<<"\nenter inches ";
+    cin>>b.inches;
+    cout<<"\ndisplaying the values of distance a\n";
+    cout<<"\nfeet = "<<a.feet<<", inches = "<<a.inches;
+    cout<<"\ndisplaying the values of distance b\n";
+    cout<<"\nfeet = "<<b.feet<<", inches = "<<b.inches;
+    getch();
+}
+   </textarea>
+    </body>
+</html>

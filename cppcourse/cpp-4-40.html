@@ -1,0 +1,107 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create six functions and call them based on user's choice using switch statement
+#include<iostream.h>
+#include<conio.h>
+void areacircle();
+void areasquare();
+void arearectangle();
+void circumferencecircle();
+void perimetersquare();
+void perimeterrectangle();
+void areacircle()
+{
+	float radius,area;
+	cout<<"enter radius of circle";
+	cin>>radius;
+	area=3.14*radius*radius;
+	cout<<"area of circle is "<<area;
+}
+void areasquare()
+{
+	float side,area;
+	cout<<"enter side of square";
+	cin>>side;
+	area=side*side;
+	cout<<"area of square is"<<area;
+}
+void arearectangle()
+{
+	float length,breadth,area;
+	cout<<"enter length of rectangle";
+	cin>>length;
+	cout<<"enter breadth of rectangle";
+	cin>>breadth;
+	area=length*breadth;
+	cout<<"area of rectangle is "<<area;
+}
+void circumferencecircle()
+{
+	float radius,circumference;
+	cout<<"enter radius of circle";
+	cin>>radius;
+	circumference=2*3.14*radius;
+	cout<<"circumference of circle is "<<circumference;
+}
+void perimetersquare()
+{
+	float side,perimeter;
+	cout<<"enter side of square";
+	cin>>side;
+	perimeter=4*side;
+	cout<<"perimeter of square is "<<perimeter;
+}
+void perimeterrectangle()
+{
+
+	float length,breadth,perimeter;
+	cout<<"enter length of rectangle";
+	cin>>length;
+	cout<<"enter breadth of rectangle";
+	cin>>breadth;
+	perimeter=2*(length+breadth);
+	cout<<"perimeter of rectangle is "<<perimeter;
+}
+void main()
+{
+	int choice;
+        clrscr();
+	cout<<"1. area of circle\n";
+	cout<<"2. area of square\n";
+	cout<<"3. area of rectangle\n";
+	cout<<"4. circumference of circle\n";
+	cout<<"5. perimeter of square\n";
+	cout<<"6. perimeter of rectangle\n";
+	cout<<"enter your choice 1 to 6";
+	cin>>choice;
+	switch(choice)
+	{
+	case 1: areacircle();
+		break;
+	case 2: areasquare();
+		break;
+	case 3: arearectangle();
+		break;
+	case 4: circumferencecircle();
+		break;
+	case 5: perimetersquare();
+		break;
+	case 6: perimeterrectangle();
+		break;
+	default: cout<<"enter a value from 1 to 6";
+	}
+	getch();
+}
+        </textarea>
+    </body>
+</html>

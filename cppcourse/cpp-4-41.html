@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function that calculates compound interest based on principal amount, rate of interest and time passed to the function as arguments
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+void compoundi(float principal,float rate,float time);
+void compoundi(float principal,float rate,float time)
+{
+    float ci;
+    ci=(principal*pow(1+(rate/100),time));
+    cout<<"\ncompound interest is "<<ci;
+}
+void main()
+{
+        clrscr();
+	float principal,rate,time;
+	cout<<"\nenter principal amount ";
+	cin>>principal;
+	cout<<"\nenter rate of interest ";
+	cin>>rate;
+	cout<<"\nenter time ";
+	cin>>time;
+	compoundi(principal,rate,time);
+	getch();
+
+}
+
+        </textarea>
+    </body>
+</html>

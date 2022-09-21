@@ -1,0 +1,45 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppstructures.html">Back To C++ Structures</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a structure book with members (bookid,bookname,author and price) and input values from user and then display the values
+#include<iostream.h>
+#include<conio.h>
+struct book
+{
+	int bookid;
+	char bookname[20];
+	char author[20];
+	float price;
+};
+void main()
+{
+	book b;   //variable of structure  book created
+	clrscr();
+	cout<<"\nenter bookid ";
+	cin>>b.bookid;
+	cout<<"\nenter book name ";
+	cin>>b.bookname;
+	cout<<"\nenter book author ";
+	cin>>b.author;
+	cout<<"\nenter price of book ";
+	cin>>b.price;
+	cout<<"\ndispalying the values \n";
+	cout<<"\nbook id is "<<b.bookid;
+	cout<<"\nbook name is "<<b.bookname;
+	cout<<"\nauthor of book is "<<b.author;
+	cout<<"\nprice of book is "<<b.price;
+	getch();
+}
+
+    </textarea>
+    </body>
+</html>

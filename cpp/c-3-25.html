@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cloops.html"> Back To C Loops Index</a>
+     <hr>
+     <br>
+        <textarea rows="40" cols="100">
+//program to input two numbers and find sum of numbers between them using while statement
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,a,b,sum=0;
+        clrscr();
+	printf("enter value for a");
+	scanf("%d",&a);
+	printf("enter value for b");
+	scanf("%d",&b);
+	i=a;
+	while(i<=b)
+	{
+		sum=sum+i;
+		i++;
+	}
+	printf("sum of numbers between a and b is %d",sum);
+	getch();
+}
+</textarea>
+    </body>
+</html>

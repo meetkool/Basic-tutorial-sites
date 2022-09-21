@@ -1,0 +1,75 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppclasses.html">Back To C++ Classes</a>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate example of nested class (which means class within a class) , class student contains a class marks
+#include<iostream.h>
+#include<conio.h>
+class marks
+{
+	int physics;
+	int maths;
+	int chemistry;
+public:
+	void getmarks()
+	{
+		cout<<"\nenter marks in physics ";
+		cin>>physics;
+		cout<<"\nenter marks in maths ";
+		cin>>maths;
+		cout<<"\nenter marks in chemistry ";
+		cin>>chemistry;
+	}
+	void showmarks()
+	{
+		cout<<"\nmarks in physics are "<<physics;
+		cout<<"\nmarks in maths are "<<maths;
+		cout<<"\nmarks in chemistry are "<<chemistry;
+
+	}
+};
+class student
+{
+	int rollno;
+	char name[20];
+	int clas;
+	marks m;
+public :
+	void getdata()
+	{
+		cout<<"\nenter rollno of student ";
+		cin>>rollno;
+		cout<<"\nenter name of student ";
+		cin>>name;
+		cout<<"\nenter class of student ";
+		cin>>clas;
+		m.getmarks();
+	}
+	void showdata()
+	{
+		cout<<"\nrollno of student is "<<rollno;
+		cout<<"\nname of student is "<<name;
+		cout<<"\nclass of student is "<<clas;
+		m.showmarks();
+	}
+};
+void main()
+{
+	student ob;
+        clrscr();
+	ob.getdata();
+	ob.showdata();
+	getch();
+}
+
+
+    </textarea>
+    </body>
+</html>

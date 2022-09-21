@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="c1darrays.html"> Back To C Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input two strings(char array) and concatenate them using for loop (concatenate means to join the strings)
+#include<conio.h>
+#include<stdio.h>
+#include<string.h>
+void main()
+{   
+    char str1[20],str2[20],str3[40];
+    int i,j,l,k;
+     clrscr();
+    printf("\nenter  string 1");
+    gets(str1);
+    printf("\nenter string 2");
+    gets(str2);
+    l=strlen(str1);
+    k=strlen(str2);
+    for(i=0;i<l;i++)
+    {
+        str3[i]=str1[i];
+    }
+    for(i=0,j=l;j<k+l;i++,j++)
+    {
+        str3[j]=str2[i];
+    }
+    str3[k+l]='\0';
+    printf("\nconcatnated string is %s",str3);
+    getch();
+}
+        </textarea>
+    </body>
+</html>

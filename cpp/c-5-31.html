@@ -1,0 +1,46 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="c1darrays.html"> Back To C++ Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input a sentence (char array) and count number of vowels and consonants in it using for loop
+#include<conio.h>
+#include<string.h>
+#include<stdio.h>
+void main()
+{
+    char str[20];
+    char ch;
+    int i,len;
+    int vowels=0,cons=0;
+    clrscr();
+    printf("\nenter a string");
+    gets(str);
+    len=strlen(str);
+    for(i=0;i<len;i++)
+    {
+        ch=str[i];
+        if((ch=='a') || (ch=='e') || (ch=='i') ||(ch=='o') ||(ch=='u'))
+        {
+            vowels++;
+        }
+        else
+        {
+            cons++;
+        }
+    }
+    printf("\nnumber of vowels are %d",vowels);
+    printf("\nnumber of consonants are %d",cons);
+    getch();
+}
+
+ </textarea>
+    </body>
+</html>

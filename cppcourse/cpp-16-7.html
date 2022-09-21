@@ -1,0 +1,71 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppsortsearch.html"> Back To C++ Basic  Index</a>
+        <br>
+       
+        <hr>
+        <textarea rows="40" cols="100">
+//program to demonstrate merge sort on two single dimensional arrays of size 5 and results into a single dimensional sorted array of 10 integer elements
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+    clrscr();
+    int a[5]={1,2,3,4,5};
+    int b[5]={10,20,30,40,50};
+    int c[10];
+    int i,j,k;
+    i=0;
+    j=0;
+    k=0;
+    int u1,u2;
+    u1=4;
+    u2=4;
+    while((i<=u1) && (j<=u2))
+    {
+        if(a[i]<=b[j])
+        {   
+            c[k]=a[i];
+            k++;
+            i++;
+        }
+        else
+        {
+            c[k]=b[j];
+            k++;
+            j++;    
+        }
+    }
+    if(i>u1)
+    {
+        while(j<=u2)
+        {
+            c[k]=b[j];
+            k++;
+            j++;
+        }
+    }
+    if(j>u2)
+    {
+        while(i<=u1)
+        {
+            c[k]=a[i];
+            k++;
+            i++;
+        }
+    }
+    for(i=0;i<10;i++)
+    {
+        cout<<c[i]<<"\n";
+    }
+    getch();
+}
+
+        </textarea>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="c1darrays.html"> Back To C Single Dimensional Arrays Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to input integer array from user and then display it using for loop
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int marks[5];
+	int i;
+        clrscr();
+	for(i=0;i<5;i++)
+	{
+		printf("enter marks in %d subject",i+1);
+		scanf("%d",&marks[i]);
+	}
+	printf("displaying marks ");
+	for(i=0;i<5;i++)
+	{
+		printf("\nmarks in subject %d are %d",i+1,marks[i]);
+	}
+	getch();
+}
+
+        </textarea>
+    </body>
+</html>

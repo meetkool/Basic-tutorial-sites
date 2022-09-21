@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpploops.html"> Back To C++ Loops Index</a>
+     <hr>
+     <br>
+        <textarea rows="40" cols="100">
+//program to find whether number entered is prime or not using for statement
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int i;
+	int a;
+	int prime=1;
+        clrscr();
+	cout<<"enter value for a";
+	cin>>a;
+	for(i=2;i<=a/2;i++)
+	{
+		if(a%i==0)
+		{
+			prime=0;
+			break;
+		}
+	}
+	if(prime==1)
+	{
+		cout<<"number entered is prime ";
+	}
+	else
+	{
+		cout<<"number enetred is not prime";
+	}
+	getch();
+}
+
+</textarea>
+    </body>
+</html>

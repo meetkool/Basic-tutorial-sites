@@ -1,0 +1,63 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cpp2darrays.html"> Back To C++ Double Dimensional Arrays Index</a>
+
+        <br><br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to initialize 3x3 matrix and replace every alternate element in the matrix by 0
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int alternate=0;
+	int a[3][3]={
+                2,4,5,
+                67,78,90,
+                12,23,45
+                };
+	int i,j;
+	cout<<"displaying the matrix \n";
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			cout<<a[i][j]<<"\t";
+		}
+		cout<<"\n";
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			if(alternate==0)
+			{
+				alternate=1;
+			}
+			else
+			{
+				a[i][j]=0;
+				alternate=0;
+			}
+		}
+	}
+	cout<<"displaying the resultant matrix \n";
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			cout<<a[i][j]<<"\t";
+		}
+		cout<<"\n";
+	}
+	getch();
+}
+        </textarea>
+    </body>
+</html>

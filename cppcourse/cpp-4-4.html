@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <a href="cppuserdefined.html"> Back To C++ User Defined Functions Index</a>
+        <br>
+        <br>
+        <hr>
+        <textarea rows="40" cols="100">
+//program to create a function to find factorial of number passed to function as argument
+#include<iostream.h>
+void factorial(int); //function declaration
+void factorial(int a) //function definition
+{
+	int fact=1;
+	int i;
+	for(i=1;i<=a;i++)
+	{
+		fact=fact*i;
+	}
+	cout<<"factorial of number is "<<fact;
+}
+void main()
+{
+	int a;
+        clrscr();
+	cout<<"enter number to find factorial for ";
+	cin>>a;
+	factorial(a); //calling the function
+	getch();
+}
+
+        </textarea>
+    </body>
+</html>
